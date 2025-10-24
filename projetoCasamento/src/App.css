@@ -1,0 +1,148 @@
+
+
+header {
+    width: 100%;
+    padding: 10px 2%;
+    position: absolute;
+    top: 0;
+    background-color:#ffd700;
+    z-index: 3;
+}
+
+/* Links em estado Light */
+.navbar-light .nav-item a {
+    color: #4A4A4A;
+}
+.navbar-light .nav-item:hover a {
+    color: #f28c28;
+}
+.navbar-light .nav-item.active a {
+    color: #1d1d1d;
+    border-bottom: solid 3px #f28c28 ;
+}
+
+
+.navbar-dark .nav-item a {
+    color: white;
+}
+.navbar-dark .nav-item:hover a {
+    color: #ffbeba;
+}
+.navbar-dark .nav-item.active a {
+    color: #ffdeba;
+    border-bottom: solid 3px white ;
+}
+
+.navbar-light {
+    background: #ffbeba;
+    box-shadow: 1px 1px 3px 1px rgba(211, 153, 153, 0.4);
+}
+
+.navbar-dark {
+    background: #f28c28; 
+    box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.5);
+}
+
+#navbar {
+    width: 100% ;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffbeba;
+    box-shadow: 1px  1px 1px 1px rgba(211, 153, 153, 0.4);
+    font-family: "Cormorant Garamond", serif;
+    
+}
+
+.logo {
+    width: 100px;
+}
+
+#nav_list {
+    display: flex;
+    list-style: none;
+    gap: 60px;
+}
+
+.nav-item a, .btn-cad{
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+
+}
+
+.nav-item:hover {
+    border-bottom: solid 1px rgba(211, 153, 153, 0.6);
+}
+
+.nav-item .active a {
+    color: #1d1d1d;
+    border-bottom: solid 3px #f28c28 ;
+}
+
+.header-img {
+  margin-left: 3%;
+  margin-right: 3%;
+  height: 70%;
+}
+
+/* SEÇÕES */
+#section-1-hero {
+    height: 100vh; /* Faz a primeira seção ter 100% da altura para forçar o scroll */
+    background-color: #ffded9;
+    padding-top: 120px; /* Adiciona padding para o header fixo */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#section-1-hero img {
+    /* Placeholder para a onda, já que o src é relativo */
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    background-color: #ffbeba; 
+}
+
+.apresentacao {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 1000px;
+  gap: 40px;
+}
+
+.imagem img {
+  width: 450px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+
+}
+
+.texto {
+  flex: 1;
+  min-width: 280px;
+
+}
+
+.texto h2 {
+  font-size: 2rem;
+  color: #222;
+  margin-bottom: 16px;
+
+}
+
+.texto p {
+  color: #555;
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
