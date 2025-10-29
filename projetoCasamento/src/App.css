@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 header {
   width: 100%;
   padding: 10px 2%;
@@ -204,7 +206,7 @@ header {
   line-height: 1.6;
 }
 
-button {
+.button-saibaMais  {
   background-color: #0077ff;
   color: white;
   border: nonel;
@@ -215,7 +217,7 @@ button {
   transition: 0.3s;
 }
 
-button:hover {
+.button-saibaMais:hover {
   background-color: #005fcc;
 }
 

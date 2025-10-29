@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import "./App.css";
 import GalleryCarousel from "./GalleryCarousel";
+import Carousel from "./Carousel";
 
 function App() {
   const galeriaImages = [
@@ -13,6 +14,13 @@ function App() {
     {
       url: "/src/assets/img/img_1.png",
     },
+  ];
+
+  const slides = [
+    "/src/assets/img/img_2.png",
+    "/src/assets/img/img_2.png",
+    "/src/assets/img/img_2.png",
+    "/src/assets/img/img_2.png",
   ];
 
   return (
@@ -69,12 +77,20 @@ function App() {
               Nosso evento marcou o início de um novo ciclo de inovação. Confira
               como tudo aconteceu e conheça os objetivos do nosso projeto.
             </p>
-            <button>Saiba mais</button>
+            <button className="button-saibaMais">Saiba mais</button>
           </div>
         </div>
       </section>
 
       {/* Carrosel de fotos - Apresentaçã */}
+
+      <main className="App">
+        <div className="max-w-lg">
+          <Carousel>
+        {slides.map((s) => (<img src={s}/>))}
+          </Carousel>
+        </div>
+      </main>
 
       {/* Montagem */}
 
