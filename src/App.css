@@ -225,6 +225,22 @@ header {
   background-color: #005fcc;
 }
 
+.App {
+  padding: 3rem;
+}
+
+.text-2xl {
+  margin-top: 8%;
+}
+
+.mt-10 {
+  margin-bottom: 10%;
+}
+
+.text-xl {
+  padding: 8%;
+}
+
 /* Preparo Section*/
 
 .faixa-back {
@@ -453,61 +469,106 @@ header {
 
 .recipe-field {
   position: absolute;
-  border: 1px solid #005fcc;
   width: 58%;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
   display: flex ;
   flex-direction: column;
   left: 7%;
   top: 6%;
+  gap: 30px;
   z-index: 2;
 }
 
 .recipe1, .recipe2 {
   background-color: #fff6f4dc;
-  width: 90%;
   color: #333;
-  margin: 30px auto;
   padding: 20px;
   border-radius: 15px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+.recipe1 {
+  display: flex;
+  width: 90%;
+  justify-content: start;
+  margin-left: 0px;
+}
+
+.recipe1-left-content {
+  width: 40%;
+  padding: 1rem;
+}
+
+.recipe1-left-content img{
+  border-radius: 12px;
+  box-shadow: 5px 2px 9px 1px rgba(0, 0, 0, 0.25);
+  width: 450px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.recipe1-left-content p{
+  margin-top: 12px;
+  text-indent: 2em;
+}
+
+.recipe1-rigth-content {  
+  width: 60%;
+  padding: 1rem;
+}
+
+.recipe1-rigth-content h2 {
+  font-size: 30px;
+  font-family: "cormorant garand";
+} 
+
+.recipe1-rigth-content h3 {
+  font-size: 16px;
+  font-family: "cormorant garand";
+}
+
+.recipe2 {
+  border: #096ad8 solid 2px;
+  width: 90%;
+  justify-content: end;
+  align-items: flex-end;
+  margin-right: 0px;
+}
+
+.recipe2-content {
+  display: flex;
+  border: #18cc00 solid 1px;
+  width: 100%;
+  padding: 1rem;
+}
+
+.recipe2-texts {
+  width: 60%;
+  padding: 1rem;
+  border: 1px solid red;
+}
+.recipe2-content h2 {
+  font-size: 30px;
+  font-family: "cormorant garand";
+}
+.recipe2-content h3 {
+  font-size: 16px;
+  font-family: "cormorant garand";
+}
+
+.recipe2-content img {
+  border-radius: 12px;
+  box-shadow: 5px 2px 9px 1px rgba(0, 0, 0, 0.25);
+  width: 450px;
+  height: 460px;
+  object-fit: cover;
+}
+
+
+
+
 /*
 
 <div className="recipe-field">
-            <div className="recipe1">
-              <div className="recipe1-left-content">
-                <img src="\src\assets\img\recipe1.png" alt="" />
-                <p>O brigadeiro de capim-santo (ou capim-limão) é uma releitura brasileira moderna de um clássico, 
-                  que une a tradição do brigadeiro à sofisticação dos sabores herbais e aromáticos da culinária contemporânea.
-                  Aqui vai a história e a receita completa, prontas para aula, e-book ou post profissional.
-                  O capim-santo (ou capim-limão) é uma erva tropical muito usada na culinária brasileira e asiática, 
-                  conhecida por seu aroma fresco, cítrico e levemente adocicado.</p>
-              </div>
-              <div className="recipe1-rigth-content">
-                <h2>Brigadeiro de Capim-Santo</h2>
-                <h3>Chef Poliana</h3>
-                <p>🧂 Ingredientes (para cerca de 20 unidades)
-                      <br></br>
-                      <br></br>
-                    1 lata (395 g) de leite condensado
-                      <br></br>  
-                    100 ml de leite integral
-                      <br></br> 
-                    1 colher (sopa) de manteiga sem sal
-                      <br></br>
-                    1/2 xícara (chá) de capim-santo picado (folhas frescas)
-                      <br></br>
-                    Açúcar cristal ou coco ralado fino para enrolar
-                      <br></br>
-                      <br></br>
-                    (Opcional: 50 g de chocolate branco picado para textura mais cremosa.)</p>
-                <h3></h3>
-              </div>
-            </div>
             <div className="recipe2">
               <div className="recipe2-content">
                 <h2>Macaron Francês</h2>

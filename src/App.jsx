@@ -184,27 +184,22 @@ function App() {
                   O brigadeiro de capim-santo (ou capim-limão) é uma releitura
                   brasileira moderna de um clássico, que une a tradição do
                   brigadeiro à sofisticação dos sabores herbais e aromáticos da
-                  culinária contemporânea. Aqui vai a história e a receita
-                  completa, prontas para aula, e-book ou post profissional. O
-                  capim-santo (ou capim-limão) é uma erva tropical muito usada
-                  na culinária brasileira e asiática, conhecida por seu aroma
-                  fresco, cítrico e levemente adocicado.
+                  culinária contemporânea.
                 </p>
               </div>
               <div className="recipe1-rigth-content">
                 <h2>Brigadeiro de Capim-Santo</h2>
                 <h3>Chef Poliana</h3>
+                <br></br>
                 <p>
                   🧂 Ingredientes (para cerca de 20 unidades)
                   <br></br>
-                  <br></br>1 lata (395 g) de leite condensado
-                  <br></br>
-                  100 ml de leite integral
-                  <br></br>1 colher (sopa) de manteiga sem sal
-                  <br></br>
-                  1/2 xícara (chá) de capim-santo picado (folhas frescas)
-                  <br></br>
-                  Açúcar cristal ou coco ralado fino para enrolar
+                  <br></br>✲ 1 lata (395 g) de leite condensado
+                  <br></br>✲ 100 ml de leite integral
+                  <br></br>✲ 1 colher (sopa) de manteiga sem sal
+                  <br></br>✲ 1/2 xícara (chá) de capim-santo picado (folhas
+                  frescas)
+                  <br></br>✲ Açúcar cristal ou coco ralado fino para enrolar
                   <br></br>
                   <br></br>
                   (Opcional: 50 g de chocolate branco picado para textura mais
@@ -215,36 +210,38 @@ function App() {
             </div>
             <div className="recipe2">
               <div className="recipe2-content">
-                <h2>Macaron Francês</h2>
-                <h3>Chef Poliana</h3>
-                <p>
-                  🧂 Ingredientes (para cerca de 20 unidades)
-                  <br></br>
-                  <br></br>1 lata (395 g) de leite condensado
-                  <br></br>
-                  100 ml de leite integral
-                  <br></br>1 colher (sopa) de manteiga sem sal
-                  <br></br>
-                  1/2 xícara (chá) de capim-santo picado (folhas frescas)
-                  <br></br>
-                  Açúcar cristal ou coco ralado fino para enrolar
-                  <br></br>
-                  <br></br>
-                  (Opcional: 50 g de chocolate branco picado para textura mais
-                  cremosa.)
-                </p>
+                <div className="recipe2-texts">
+                  <h2>Macaron Francês</h2>
+                  <h3>Chef Poliana</h3>
+                  <p>
+                    🧂 Ingredientes (para cerca de 20 unidades)
+                    <br></br>
+                    <br></br>1 lata (395 g) de leite condensado
+                    <br></br>
+                    100 ml de leite integral
+                    <br></br>1 colher (sopa) de manteiga sem sal
+                    <br></br>
+                    1/2 xícara (chá) de capim-santo picado (folhas frescas)
+                    <br></br>
+                    Açúcar cristal ou coco ralado fino para enrolar
+                    <br></br>
+                    <br></br>
+                    (Opcional: 50 g de chocolate branco picado para textura mais
+                    cremosa.)
+                  </p>
 
-                <h3>
-                  mais que um doce — é uma poesia em forma de sabor. Com sua
-                  casquinha leve e crocante que se desfaz ao toque, revela um
-                  coração macio e delicado, quase etéreo. Nascido na Itália
-                  renascentista e levado à França por Catarina de Médici,
-                  encontrou ali seu verdadeiro palco: um país que transformou
-                  simples amêndoas e açúcar em arte.
-                </h3>
-                <div className="recipe2-img">
-                  <img src="\src\assets\img\recipe2.png" alt="" />
+                  <h3>
+                    mais que um doce — é uma poesia em forma de sabor. Com sua
+                    casquinha leve e crocante que se desfaz ao toque, revela um
+                    coração macio e delicado, quase etéreo. Nascido na Itália
+                    renascentista e levado à França por Catarina de Médici,
+                    encontrou ali seu verdadeiro palco: um país que transformou
+                    simples amêndoas e açúcar em arte.
+                  </h3>
                 </div>
+                
+                  <img src="\src\assets\img\recipe2.png" alt="" />
+                
               </div>
             </div>
           </div>
