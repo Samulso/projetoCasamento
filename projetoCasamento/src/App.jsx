@@ -84,13 +84,37 @@ function App() {
 
       {/* Carrosel de fotos - Apresentaçã */}
 
-      <main className="App">
-        <div className="max-w-lg">
-          <Carousel>
-        {slides.map((s) => (<img src={s}/>))}
-          </Carousel>
-        </div>
-      </main>
+      <main className="App py-10 bg-[#fffaf9] flex flex-col items-center">
+  <h2 className="text-2xl font-semibold mb-6 text-gray-800">
+    Galeria de Fotos do Evento
+  </h2>
+
+  <Carousel>
+    {slides.map((s, i) => (
+      <img
+        key={i}
+        src={s}
+        alt={`Foto ${i + 1}`}
+        className="w-full max-w-4xl h-[450px] object-cover rounded-2xl"
+      />
+    ))}
+  </Carousel>
+
+  {/* Área de vídeo */}
+  <div className="mt-10 text-center">
+    <h3 className="text-xl font-medium mb-4 text-gray-700">
+      Veja um pouco mais do nosso evento 🎥
+    </h3>
+    <div className="flex justify-center">
+      <video
+        className="rounded-2xl shadow-lg border border-gray-200 w-[720px] max-w-full"
+        controls
+      >
+        <source src="/src/assets/videos/video_evento.mp4" type="video/mp4" />
+      </video>
+    </div>
+  </div>
+</main>
 
       {/* Montagem */}
 
