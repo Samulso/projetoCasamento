@@ -2,6 +2,10 @@ import { useState, useEffect } from "react";
 import "./App.css";
 import GalleryCarousel from "./GalleryCarousel";
 import Carousel from "./Carousel.jsx";
+import foto1 from "./assets/img/foto1Ap.jpg";
+import foto2 from "./assets/img/foto2Ap.jpg";
+import foto3 from "./assets/img/foto3Ap.jpg";
+import foto4 from "./assets/img/foto4AP.jpg";
 
 function App() {
   const galeriaImages = [
@@ -28,12 +32,7 @@ function App() {
     },
   ];
 
-  const slides = [
-    "/src/assets/img/img_2.png",
-    "/src/assets/img/img_2.png",
-    "/src/assets/img/img_2.png",
-    "/src/assets/img/img_2.png",
-  ];
+  const slides = [foto1, foto2, foto3, foto4];
 
   return (
     <>
@@ -107,7 +106,7 @@ function App() {
               key={i}
               src={s}
               alt={`Foto ${i + 1}`}
-              className="w-full max-w-4xl h-[450px] object-cover rounded-2xl"
+              className="w-full h-[450px] object-cover rounded-2xl"
             />
           ))}
         </Carousel>
@@ -239,9 +238,8 @@ function App() {
                     simples amêndoas e açúcar em arte.
                   </h3>
                 </div>
-                
-                  <img src="\src\assets\img\recipe2.png" alt="" />
-                
+
+                <img src="\src\assets\img\recipe2.png" alt="" />
               </div>
             </div>
           </div>
