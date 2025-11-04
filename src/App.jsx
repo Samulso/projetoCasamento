@@ -118,13 +118,10 @@ function App() {
           </h3>
           <div className="flex justify-center">
             <video
-              className="rounded-2xl shadow-lg border border-gray-200 w-[720px] max-w-full"
+              className="rounded-2xl shadow-lg border border-gray-200 w-[720px] max-w-90 max-wd-full"
               controls
             >
-              <source
-                src="/src/assets/videos/video_evento.mp4"
-                type="video/mp4"
-              />
+              <source src="src\assets\vids\videoeditado.mp4" type="video/mp4" />
             </video>
           </div>
         </div>
