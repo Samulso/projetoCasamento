@@ -23,7 +23,7 @@ header {
   border-bottom: solid 3px #f28c28;
 }
 
-.navbar-dark .nav-item a {
+.navbar-dark .nav-item a {m
   color: white;
 }
 
@@ -119,7 +119,7 @@ header {
   font-size: 0.8rem;
   opacity: 0.9;
 }
-  
+
 .img_1,
 .img_2 {
   position: absolute;
@@ -210,7 +210,7 @@ header {
   line-height: 1.6;
 }
 
-.button-saibaMais  {
+.button-saibaMais {
   background-color: #0077ff;
   color: white;
   border: nonel;
@@ -255,14 +255,13 @@ header {
   transform-origin: center;
   z-index: 0;
   margin: -50px 0;
-  
 }
 
 .preparo {
   position: relative;
   min-height: 100vh;
   background-color: #fff6f4dc;
-  padding-bottom: 250px; 
+  padding-bottom: 250px;
 }
 
 .preparo-field {
@@ -272,8 +271,8 @@ header {
   flex-direction: row;
 }
 
-.left-content { 
-  position: relative; 
+.left-content {
+  position: relative;
   background-color: #ffbeba;
   padding: 60px 40px;
   margin-left: 7%;
@@ -293,7 +292,7 @@ header {
 }
 
 .forma-l {
-  position: relative; 
+  position: relative;
   bottom: 0;
   width: 86%;
   height: 450px;
@@ -306,27 +305,33 @@ header {
 
 /* Adiciona curvas nos cantos internos usando pseudo-elementos */
 .forma-l::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 100%;
   right: 29.1%;
   width: 200px;
   height: 200px;
   background-color: #000000; /* mesma cor do fundo da seção */
-  background: 
-  radial-gradient(circle at bottom left, transparent 200px, #ffbeba 50px);;
+  background: radial-gradient(
+    circle at bottom left,
+    transparent 200px,
+    #ffbeba 50px
+  );
 }
 
 .forma-l::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 100%;
   left: 29.1%;
   width: 200px;
   height: 200px;
   background-color: #000000; /* mesma cor do fundo da seção */
-  background: 
-  radial-gradient(circle at top right, transparent 200px, #ffbeba 50px);;
+  background: radial-gradient(
+    circle at top right,
+    transparent 200px,
+    #ffbeba 50px
+  );
 }
 
 .rigth-content {
@@ -334,7 +339,7 @@ header {
   align-items: center;
   justify-content: center;
   margin: 6% auto;
-  z-index: 3; 
+  z-index: 3;
 }
 
 .item-preparo h1 {
@@ -360,10 +365,8 @@ header {
 .imagem-anterior,
 .imagem-central,
 .imagem-posterior {
-  transition: 
-    transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-    opacity 0.8s ease-in-out,
-    box-shadow 0.6s ease-in-out;
+  transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    opacity 0.8s ease-in-out, box-shadow 0.6s ease-in-out;
   will-change: transform, opacity;
 }
 
@@ -454,7 +457,7 @@ header {
   display: flex;
   justify-content: end;
   align-items: end;
-  z-index: 3; 
+  z-index: 3;
 }
 
 .recipe-rigth-content {
@@ -470,7 +473,7 @@ header {
 .recipe-field {
   position: absolute;
   width: 58%;
-  display: flex ;
+  display: flex;
   flex-direction: column;
   left: 7%;
   top: 6%;
@@ -478,7 +481,8 @@ header {
   z-index: 2;
 }
 
-.recipe1, .recipe2 {
+.recipe1,
+.recipe2 {
   background-color: #fff6f4dc;
   color: #333;
   padding: 20px;
@@ -498,7 +502,7 @@ header {
   padding: 1rem;
 }
 
-.recipe1-left-content img{
+.recipe1-left-content img {
   border-radius: 12px;
   box-shadow: 5px 2px 9px 1px rgba(0, 0, 0, 0.25);
   width: 450px;
@@ -506,12 +510,12 @@ header {
   object-fit: cover;
 }
 
-.recipe1-left-content p{
+.recipe1-left-content p {
   margin-top: 12px;
   text-indent: 2em;
 }
 
-.recipe1-rigth-content {  
+.recipe1-rigth-content {
   width: 60%;
   padding: 1rem;
 }
@@ -519,7 +523,7 @@ header {
 .recipe1-rigth-content h2 {
   font-size: 30px;
   font-family: "cormorant garand";
-} 
+}
 
 .recipe1-rigth-content h3 {
   font-size: 16px;
@@ -562,9 +566,6 @@ header {
   height: 460px;
   object-fit: cover;
 }
-
-
-
 
 /*
 
