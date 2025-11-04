@@ -1,7 +1,13 @@
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { useState, useEffect } from "react";
 import "./App.css";
 import GalleryCarousel from "./GalleryCarousel";
 import Carousel from "./Carousel.jsx";
+import foto1 from "./assets/img/foto1Ap.jpg";
+import foto2 from "./assets/img/foto2Ap.jpg";
+import foto3 from "./assets/img/foto3Ap.jpg";
+import foto4 from "./assets/img/foto4AP.jpg";
 
 function App() {
   const galeriaImages = [
@@ -28,12 +34,15 @@ function App() {
     },
   ];
 
-  const slides = [
-    "/src/assets/img/img_2.png",
-    "/src/assets/img/img_2.png",
-    "/src/assets/img/img_2.png",
-    "/src/assets/img/img_2.png",
-  ];
+  const slides = [foto1, foto2, foto3, foto4];
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+      offset: 100,
+    });
+  }, []);
 
   return (
     <>
@@ -65,76 +74,90 @@ function App() {
       {/* hero-section */}
 
       <section className="hero-section" id="section-1-hero">
-        <div className="overlay-content">
+        <div className="overlay-content" data-aos="zoom-in">
           <h1>“Doce união entre sabores e olhares.”</h1>
           <p>Fotos capturadas pelos alunos de Desenvolvimento de Sistemas</p>
         </div>
+<<<<<<< HEAD
         <div className="back-imgs">
           <img className="img_1" src="\src\assets\img\img_2.png" alt="" />
           <img className="img_2" src="\src\assets\img\img_1.png" alt="" />
         </div>
         
+=======
+
+        <img
+          className="img_1"
+          src="\src\assets\img\img_2.png"
+          alt=""
+          data-aos="zoom-in-down"
+        />
+        <img className="img_2" src="\src\assets\img\img_1.png" alt="" />
+>>>>>>> 7268abb42ad8699b1d83e9fc5b18720650a51870
 
         <img className="wave" src="src\assets\wave.svg" alt="" />
       </section>
 
       {/* Apresentação */}
-      <section className="apresentacao">
+      <section className="apresentacao" data-aos="fade-right" id="Apresentacao">
         <div className="container">
-          <div className="imagem">
+          <div className="imagem" data-aos="zoom-in">
             <img src="\src\assets\img\img_2.png" alt="Evento" />
           </div>
 
-          <div className="texto">
+          <div className="texto" data-aos="fade-left">
             <h2>Apresentação do Projeto</h2>
             <p>
               Nosso evento marcou o início de um novo ciclo de inovação. Confira
               como tudo aconteceu e conheça os objetivos do nosso projeto.
             </p>
-            <button className="button-saibaMais">Saiba mais</button>
+            <button className="button-saibaMais" data-aos="flip-up">
+              Saiba mais
+            </button>
           </div>
         </div>
       </section>
 
       {/* Carrosel de fotos - Apresentaçã */}
 
-      <main className="App py-10 bg-[#fffaf9] flex flex-col items-center">
+      <main
+        className="App py-10 bg-[#fffaf9] flex flex-col items-center"
+        data-aos="fade-up"
+      >
         <h2 className="text-2xl font-semibold mb-6 text-gray-800">
           Galeria de Fotos do Evento
         </h2>
 
-        <Carousel>
+        <Carousel data-aos="zoom-in">
           {slides.map((s, i) => (
             <img
               key={i}
               src={s}
               alt={`Foto ${i + 1}`}
-              className="w-full max-w-4xl h-[450px] object-cover rounded-2xl"
+              className="w-full h-[450px] object-cover rounded-2xl"
             />
           ))}
         </Carousel>
 
         {/* Área de vídeo */}
-        <div className="mt-10 text-center">
+        <div className="mt-10 text-center" data-aos="fade-up">
           <h3 className="text-xl font-medium mb-4 text-gray-700">
             Veja um pouco mais do nosso evento 🎥
           </h3>
           <div className="flex justify-center">
             <video
-              className="rounded-2xl shadow-lg border border-gray-200 w-[720px] max-w-full"
+              className="rounded-2xl shadow-lg border border-gray-200 w-[720px] max-w-90 max-wd-full"
               controls
+              data-aos="zoom-in"
             >
-              <source
-                src="/src/assets/videos/video_evento.mp4"
-                type="video/mp4"
-              />
+              <source src="src\assets\vids\videoeditado.mp4" type="video/mp4" />
             </video>
           </div>
         </div>
       </main>
 
       {/*preparo*/}
-      <section className="preparo">
+      <section className="preparo" data-aos="fade-up" id="Preparo">
         <div className="faixa-back"></div>
         <div className="preparo-field">
           <div className="left-content">
@@ -258,6 +281,7 @@ function App() {
                 </div>
 
                 <img src="\src\assets\img\recipe2.png" alt="" />
+<<<<<<< HEAD
 
               </div>
             </div>
@@ -302,6 +326,8 @@ function App() {
                 <h2></h2>
                 <img src="" alt="" />
                 <h3></h3>
+=======
+>>>>>>> 7268abb42ad8699b1d83e9fc5b18720650a51870
               </div>
             </div>
           </div>

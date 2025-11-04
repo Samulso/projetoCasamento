@@ -1,7 +1,7 @@
-import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useState } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
-export default function Carousel({ children: slides }) {
+function Carousel({ children: slides }) {
   const [curr, setCurr] = useState(0);
 
   const prev = () =>
@@ -14,14 +14,16 @@ export default function Carousel({ children: slides }) {
     <div className="relative w-full max-w-4xl mx-auto overflow-hidden rounded-2xl shadow-lg">
       {/* Container dos slides */}
       <div
-        className="flex transition-transform ease-out duration-500"
+        className="flex transition-transform ease-out duration-700"
         style={{
           transform: `translateX(-${curr * 100}%)`,
-          width: `${slides.length * 100}%`,
         }}
       >
         {slides.map((slide, index) => (
-          <div key={index} className="w-full flex-shrink-0 flex justify-center">
+          <div
+            key={index}
+            className="w-full flex-shrink-0 flex justify-center items-center"
+          >
             {slide}
           </div>
         ))}
@@ -57,3 +59,5 @@ export default function Carousel({ children: slides }) {
     </div>
   );
 }
+
+export default Carousel;
