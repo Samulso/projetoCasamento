@@ -1,26 +1,30 @@
 import { useState, useEffect } from "react";
 import "./App.css";
 import GalleryCarousel from "./GalleryCarousel";
-import Carousel from "./Carousel";
 
 function App() {
   const galeriaImages = [
     {
-      url: "/src/assets/img/img_2.png",
+      url: "/src/assets/img/preparo1.png",
     },
     {
-      url: "/src/assets/img/image.png",
+      url: "/src/assets/img/preparo2.png",
     },
     {
-      url: "/src/assets/img/img_1.png",
+      url: "/src/assets/img/preparo3.png",
     },
-  ];
-
-  const slides = [
-    "/src/assets/img/img_2.png",
-    "/src/assets/img/img_2.png",
-    "/src/assets/img/img_2.png",
-    "/src/assets/img/img_2.png",
+    {
+      url: "/src/assets/img/preparo4.png",
+    },
+    {
+      url: "/src/assets/img/preparo5.png",
+    },
+    {
+      url: "/src/assets/img/preparo6.png",
+    },
+    {
+      url: "/src/assets/img/preparo7.png",
+    },
   ];
 
   return (
@@ -82,148 +86,142 @@ function App() {
         </div>
       </section>
 
-      {/* Carrosel de fotos - Apresentaçã */}
-
-      <main className="App">
-        <div className="max-w-lg">
-          <Carousel>
-        {slides.map((s) => (<img src={s}/>))}
-          </Carousel>
-        </div>
-      </main>
-
-      {/* Montagem */}
-
-      {/* ======================================================= */}
-      {/* 📍 SUA SEÇÃO: MONTAGEM COMPACTA (Foco nos Círculos)  */}
-      {/* ======================================================= */}
-      <section className="secao-montagem" id="Montagem">
-        <div className="container-montagem">
-          {/* Título Principal */}
-          <h2 className="titulo-secao">
-            🍽️ A Arte Culinária: Qualidade e Apresentação
-          </h2>
-
-          {/* Introdução sobre a filosofia de apresentação */}
-          <p className="filosofia-apresentacao">
-            Nosso compromisso vai além do sabor. Detalhes minuciosos no preparo
-            e na montagem são a nossa garantia de que cada momento do seu evento
-            será inesquecível.
-          </p>
-
-          {/* BLOCO CENTRAL: IMAGENS CIRCULARES COM INFORMAÇÕES DE QUALIDADE */}
-          <div className="compromisso-qualidade">
-            <h3 className="subtitulo-compromisso">
-              Os Pilares da Nossa Excelência
-            </h3>
-            <div className="blocos-qualidade">
-              <div className="bloco-item">
-                {/* ATUALIZE O CAMINHO DA IMAGEM */}
-                <img
-                  src="/src/assets/img/ingredientes-selecionados.jpg"
-                  alt="Seleção de Ingredientes Frescos"
-                  className="img-circular"
-                />
-                <h5>1. Seleção Criteriosa</h5>
-                <p>
-                  A base de tudo: ingredientes frescos, sazonais e de
-                  fornecedores locais. A qualidade da matéria-prima é o primeiro
-                  passo para um prato perfeito.
-                </p>
-              </div>
-              <div className="bloco-item">
-                {/* ATUALIZE O CAMINHO DA IMAGEM */}
-                <img
-                  src="/src/assets/img/equipe-preparo.jpg"
-                  alt="Chef cozinhando com paixão"
-                  className="img-circular"
-                />
-                <h5>2. Técnica e Rigor</h5>
-                <p>
-                  Nossa equipe aplica técnicas culinárias de alta gastronomia,
-                  garantindo a execução impecável de cada preparo, da cocção à
-                  finalização.
-                </p>
-              </div>
-              <div className="bloco-item">
-                {/* ATUALIZE O CAMINHO DA IMAGEM */}
-                <img
-                  src="/src/assets/img/higiene-cozinha.jpg"
-                  alt="Cozinha limpa e organizada"
-                  className="img-circular"
-                />
-                <h5>3. Higiene e Confiança</h5>
-                <p>
-                  Cozinhas impecáveis e processos padronizados garantem a
-                  segurança alimentar e a tranquilidade para você e seus
-                  convidados.
-                </p>
-              </div>
-            </div>
-          </div>
-          {/* FIM DO BLOCO CENTRAL */}
-
-          {/* CONCLUSÃO CURTA */}
-          <div className="conclusao-montagem">
-            <p>
-              É essa dedicação em cada etapa, desde a escolha do produto até o
-              empratamento final, que transforma um simples buffet em uma
-              **experiência gastronômica de luxo**.
-            </p>
-          </div>
-        </div>
-      </section>
-      {/* Fim da sua seção compacta */}
 
       {/*preparo*/}
       <section className="preparo">
+        <div className="faixa-back"></div>
         <div className="preparo-field">
           <div className="left-content">
             <h1>Preparo</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Accusantium ab consequatur perspiciatis, quasi, assumenda in
-              facilis odio dolorum error eius quas illo eos, iure sint nihil
-              suscipit similique nobis nesciunt?
+              Cada prato começa com um gesto simples — o corte, o cheiro, o som
+              da panela. Aqui, cada ingrediente ganha significado nas mãos de
+              quem prepara com amor. O preparo é mais do que técnica: é cuidado,
+              é partilha, é aprendizado.
+              <br></br>
+              <br></br>
+              Entre risadas e conversas, o tempo parece desacelerar. O vapor, o
+              aroma e as cores se misturam, criando memórias que vão muito além
+              do sabor. É nesse instante que a cozinha deixa de ser apenas um
+              espaço físico e se transforma em um lugar de afeto — onde cada
+              movimento carrega um propósito, e cada receita guarda uma
+              história.
+              <br></br>
+              <br></br>
+              Porque cozinhar, antes de tudo, é um ato de conexão: com o
+              alimento, com o outro e com o que há de mais humano em nós.
             </p>
           </div>
 
           <div className="rigth-content">
-            <h2>lorem ipsum lorem lorem</h2>
             <div className="preparo-items">
-              <GalleryCarousel images={galeriaImages} title="Com muito amor, o preparo dos alimentos!" />
+              <GalleryCarousel
+                images={galeriaImages}
+                title="Com muito amor, o preparo dos alimentos!"
+              />
+
+              <div className="img-field">
+                <img src="" alt="" />
+              </div>
             </div>
           </div>
         </div>
-      </section>
 
-      <section className="test">
-        <div>oi</div>
-        <div>oi</div>
-        <div>oi</div>
-        <div>oi</div>
-        <div>oi</div>
-        <div>oi</div>
-        <div>oi</div>
-        <div>oi</div>
-        <div>oi</div>
-        <div>oi</div>
-        <div>oi</div>
-        <div>oi</div>
-        <div>oi</div>
-        <div>oi</div>
-        <div>oi</div>
-        <div>oi</div>
-        <div>oi</div>
-        <div>oi</div>
-        <div>oi</div>
-        <div>oi</div>
-        <div>oi</div>
-        <div>oi</div>
-        <div>oi</div>
-        <div>oi</div>
-        <div>oi</div>
-        <div>oi</div>
+        {/* Adicione esta div para criar a forma em L */}
+
+        
+        <div className="forma-l"></div>
+        
+        <div className="recipe-rigth-content-field">
+
+          <div className="recipe-field">
+            <div className="recipe1">
+              <div className="recipe1-left-content">
+                <img src="\src\assets\img\recipe1.png" alt="" />
+                <p>O brigadeiro de capim-santo (ou capim-limão) é uma releitura brasileira moderna de um clássico, 
+                  que une a tradição do brigadeiro à sofisticação dos sabores herbais e aromáticos da culinária contemporânea.
+                  Aqui vai a história e a receita completa, prontas para aula, e-book ou post profissional.
+                  O capim-santo (ou capim-limão) é uma erva tropical muito usada na culinária brasileira e asiática, 
+                  conhecida por seu aroma fresco, cítrico e levemente adocicado.</p>
+              </div>
+              <div className="recipe1-rigth-content">
+                <h2>Brigadeiro de Capim-Santo</h2>
+                <h3>Chef Poliana</h3>
+                <p>🧂 Ingredientes (para cerca de 20 unidades)
+                      <br></br>
+                      <br></br>
+                    1 lata (395 g) de leite condensado
+                      <br></br>  
+                    100 ml de leite integral
+                      <br></br> 
+                    1 colher (sopa) de manteiga sem sal
+                      <br></br>
+                    1/2 xícara (chá) de capim-santo picado (folhas frescas)
+                      <br></br>
+                    Açúcar cristal ou coco ralado fino para enrolar
+                      <br></br>
+                      <br></br>
+                    (Opcional: 50 g de chocolate branco picado para textura mais cremosa.)</p>
+                <h3></h3>
+              </div>
+            </div>
+            <div className="recipe2">
+              <div className="recipe2-content">
+                <h2>Macaron Francês</h2>
+                <h3>Chef Poliana</h3>
+                <p>🧂 Ingredientes (para cerca de 20 unidades)
+                      <br></br>
+                      <br></br>
+                    1 lata (395 g) de leite condensado
+                      <br></br>  
+                    100 ml de leite integral
+                      <br></br> 
+                    1 colher (sopa) de manteiga sem sal
+                      <br></br>
+                    1/2 xícara (chá) de capim-santo picado (folhas frescas)
+                      <br></br>
+                    Açúcar cristal ou coco ralado fino para enrolar
+                      <br></br>
+                      <br></br>
+                    (Opcional: 50 g de chocolate branco picado para textura mais cremosa.)
+                </p>
+
+                <h3>
+                  mais que um doce — é uma poesia em forma de sabor. Com sua casquinha leve e 
+                  crocante que se desfaz ao toque, revela um coração macio e delicado, quase etéreo. 
+                  Nascido na Itália renascentista e levado à França por Catarina de Médici, 
+                  encontrou ali seu verdadeiro palco: um país que transformou simples amêndoas e açúcar em arte.
+                </h3>
+                <div className="recipe2-img">
+                  <img src="\src\assets\img\recipe2.png" alt="" />
+                </div>
+
+              </div>
+            </div>
+          </div>
+          
+          <div className="recipe-rigth-content">
+            <h1>Preparo</h1>
+            <p>
+              Cada prato começa com um gesto simples — o corte, o cheiro, o som
+              da panela. Aqui, cada ingrediente ganha significado nas mãos de
+              quem prepara com amor. O preparo é mais do que técnica: é cuidado,
+              é partilha, é aprendizado.
+              <br></br>
+              <br></br>
+              Entre risadas e conversas, o tempo parece desacelerar. O vapor, o
+              aroma e as cores se misturam, criando memórias que vão muito além
+              do sabor. É nesse instante que a cozinha deixa de ser apenas um
+              espaço físico e se transforma em um lugar de afeto — onde cada
+              movimento carrega um propósito, e cada receita guarda uma
+              história.
+              <br></br>
+              <br></br>
+              Porque cozinhar, antes de tudo, é um ato de conexão: com o
+              alimento, com o outro e com o que há de mais humano em nós.
+            </p>
+          </div>
+        </div>
       </section>
     </>
   );
