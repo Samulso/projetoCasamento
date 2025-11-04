@@ -69,9 +69,11 @@ function App() {
           <h1>“Doce união entre sabores e olhares.”</h1>
           <p>Fotos capturadas pelos alunos de Desenvolvimento de Sistemas</p>
         </div>
-
-        <img className="img_1" src="\src\assets\img\img_2.png" alt="" />
-        <img className="img_2" src="\src\assets\img\img_1.png" alt="" />
+        <div className="back-imgs">
+          <img className="img_1" src="\src\assets\img\img_2.png" alt="" />
+          <img className="img_2" src="\src\assets\img\img_1.png" alt="" />
+        </div>
+        
 
         <img className="wave" src="src\assets\wave.svg" alt="" />
       </section>
@@ -192,14 +194,19 @@ function App() {
                 <h3>Chef Poliana</h3>
                 <br></br>
                 <p>
-                  🧂 Ingredientes (para cerca de 20 unidades)
+                  🧂 <span className="t-001">Ingredientes</span> (para cerca de 20 unidades)
                   <br></br>
-                  <br></br>✲ 1 lata (395 g) de leite condensado
-                  <br></br>✲ 100 ml de leite integral
-                  <br></br>✲ 1 colher (sopa) de manteiga sem sal
-                  <br></br>✲ 1/2 xícara (chá) de capim-santo picado (folhas
+                  <br></br>
+                  ✲ 1 lata (395 g) de leite condensado
+                  <br></br>
+                  ✲ 100 ml de leite integral
+                  <br></br>
+                  ✲ 1 colher (sopa) de manteiga sem sal
+                  <br></br>
+                  ✲ 1/2 xícara (chá) de capim-santo picado (folhas
                   frescas)
-                  <br></br>✲ Açúcar cristal ou coco ralado fino para enrolar
+                  <br></br>
+                  ✲ Açúcar cristal ou coco ralado fino para enrolar
                   <br></br>
                   <br></br>
                   (Opcional: 50 g de chocolate branco picado para textura mais
@@ -212,22 +219,32 @@ function App() {
               <div className="recipe2-content">
                 <div className="recipe2-texts">
                   <h2>Macaron Francês</h2>
-                  <h3>Chef Poliana</h3>
+                  <h4 className="chef-name">Chef Poliana</h4>
                   <p>
-                    🧂 Ingredientes (para cerca de 20 unidades)
+                    🧂 <span className="t-001">Ingredientes</span> (rendimento: aprox. 25 unidades)
+                    <br></br><br></br>
+
+                    <span className="t-001">Para as conchas:</span>
                     <br></br>
-                    <br></br>1 lata (395 g) de leite condensado
+                    ✲ 120 g de farinha de amêndoas bem peneirada
                     <br></br>
-                    100 ml de leite integral
-                    <br></br>1 colher (sopa) de manteiga sem sal
+                    ✲ 200 g de açúcar de confeiteiro
                     <br></br>
-                    1/2 xícara (chá) de capim-santo picado (folhas frescas)
+                    ✲ 100 g de claras (aprox. 3 unidades)
                     <br></br>
-                    Açúcar cristal ou coco ralado fino para enrolar
+                    ✲ 30 g de açúcar refinado
+                    <br></br>
+                    ✲ Corante em gel (opcional)
                     <br></br>
                     <br></br>
-                    (Opcional: 50 g de chocolate branco picado para textura mais
-                    cremosa.)
+                    <span className="t-001">Para o recheio</span> (ganache de chocolate):
+                    <br></br>
+                    ✲ 150 g de chocolate meio amargo picado
+                    <br></br>
+                    ✲ 80 ml de creme de leite fresco
+                    <br></br>
+                    ✲ 1 colher (sopa) de manteiga sem sal
+
                   </p>
 
                   <h3>
@@ -239,9 +256,52 @@ function App() {
                     simples amêndoas e açúcar em arte.
                   </h3>
                 </div>
-                
-                  <img src="\src\assets\img\recipe2.png" alt="" />
-                
+
+                <img src="\src\assets\img\recipe2.png" alt="" />
+
+              </div>
+            </div>
+            <div className="recipes3-4">
+              <div className="recipe3">
+                <h1>Caldo verde</h1>
+                <h2>Chef Nilda</h2>
+                <div className="slider">
+                  <div className="slides">
+
+                    {/*radio buttons*/}
+
+                    <input type="radio" name="radio-btn" id="radio1" />
+                    <input type="radio" name="radio-btn" id="radio2" />
+
+                    {/*slide images*/}
+
+                    <div className="slide first">
+                      <img src="\src\assets\img\recipe3-1.png" alt="" />
+                    </div>
+                    <div className="slide">
+                      <img src="\src\assets\img\recipe3-2.png" alt="" />
+                    </div>
+
+                    <div className="navigation-auto">
+                      <div className="auto-btn1"></div>
+                      <div className="auto-btn2"></div>
+                    </div>
+
+                  </div>
+
+                  <div className="manual-navigation">
+                    <label htmlFor="radio1" className="manual-btn"></label>
+                    <label htmlFor="radio2" className="manual-btn"></label>
+                  </div>
+
+                </div>
+                <h3></h3>
+              </div>
+              <div className="recipe4">
+                <h1></h1>
+                <h2></h2>
+                <img src="" alt="" />
+                <h3></h3>
               </div>
             </div>
           </div>
