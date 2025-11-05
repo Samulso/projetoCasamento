@@ -23,7 +23,7 @@ header {
   border-bottom: solid 3px #f28c28;
 }
 
-.navbar-dark .nav-item a {m
+.navbar-dark .nav-item a {
   color: white;
 }
 
@@ -467,11 +467,10 @@ header {
   padding: 60px 40px;
   z-index: 1;
   width: 25%;
-  min-height: 150vh;
+  min-height: 300vh;
 }
 
 .recipe-field {
-  border: 1px solid red;
   position: absolute;
   width: 58%;
   display: flex;
@@ -483,7 +482,9 @@ header {
 }
 
 .recipe1,
-.recipe2 {
+.recipe2,
+.recipe3,
+.recipe4 {
   background-color: #fff6f4dc;
   color: #333;
   padding: 20px;
@@ -534,6 +535,7 @@ header {
 }
 
 .recipe2 {
+  margin-top: 10%;
   width: 90%;
   display: flex;
   margin-left: 10%;
@@ -548,7 +550,6 @@ header {
 .recipe2-texts {
   width: 60%;
   padding: 1rem;
-
 }
 
 .recipe2 p {
@@ -582,10 +583,10 @@ header {
   object-fit: cover;
 }
 
-<<<<<<< HEAD
 .slider {
   margin: 0 auto;
-  width: 800px;
+  border-radius: 25px;
+  width: 340px;
   height: 400px;
   overflow: hidden;
 }
@@ -600,21 +601,19 @@ header {
   display: none;
 }
 
-.slide{
+.slide {
   width: 25%;
   position: relative;
+  transition: 2s;
 }
-=======
-/*
->>>>>>> 7268abb42ad8699b1d83e9fc5b18720650a51870
 
 .slide img {
-  width: 800px;
+  width: 350px;
 }
 
 .manual-navigation {
   position: absolute;
-  width: 800px;
+  width: 350px;
   margin-top: -40px;
   display: flex;
   justify-content: center;
@@ -625,5 +624,235 @@ header {
   padding: 5px;
   border-radius: 10px;
   cursor: pointer;
-  transition: 1s;
+  transition: 0.5s;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+
+.manual-btn:hover {
+  background-color: #fff;
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+
+#radio1:checked ~ .first {
+  margin-left: -25%;
+}
+
+.navigation-auto div {
+  border: 2px solid #fff;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.navigation-auto {
+  position: absolute;
+  display: flex;
+  width: 350px;
+  justify-content: center;
+  margin-top: 360px;
+}
+
+.navigation-auto div:not(:last-child) {
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+  background-color: #fff;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+  background-color: #fff;
+}
+
+.recipes3-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:12px;
+  margin-top: 10%;
+}
+
+.recipe3-carousel-field {
+  display: flex;
+  margin: 25px auto;
+  flex-direction: column;
+  width: 80%;
+  margin-top: 5%;
+}
+
+.recipe3-carousel-field h3{
+  margin-top: 5%;
+  font-size: 16px;
+  text-indent: 2em;
+  font-family: "cormorant garand";
+}
+
+.recipe3 {
+  width: 50%;
+  padding: 2rem;
+}
+
+.recipe3 h1, .recipe4 h1 {
+  margin-top: 5%;
+  margin-left: 5%;
+  font-size: 37px;
+  color: #333;
+  font-family: "cormorant garand";
+}
+
+.recipe3 h2, .recipe4 h2 {
+  font-size: 18px;
+  margin-left: 6%;
+  color: #333;
+  font-family: "cormorant garand";
+}
+
+.recipe4 {
+  content: '';
+  width: 50%;
+  margin-top: 10%;
+}
+
+.recipe-rigth-content2 {
+  position: relative;
+  margin-right: 7%;
+  background-color: #ffbeba;
+  padding: 60px 40px;
+  z-index: 1;
+  width: 25%;
+  min-height: 300vh;
+}
+
+.recipe-rigth-content2 h1 {
+  font-size: 4rem;
+  font-family: "Cormorant Garamond", serif;
+  margin-bottom: 10%;
+  margin-top: 10%;
+}
+
+.recipe-rigth-content2 p {
+  font-size: 1.2rem;
+}
+/*
+<div className="slides-4">
+                      
+                      <input type="radio" name="radio-btn-4" id="radio1" />
+                      <input type="radio" name="radio-btn-4" id="radio2" />
+
+                      
+
+                      <div className="slide first">
+                        <img src="\src\assets\img\recipe3-1.png" alt="" />
+                      </div>
+                      <div className="slide">
+                        <img src="\src\assets\img\recipe3-2.png" alt="" />
+                      </div>
+
+                      <div className="navigation-auto-4">
+                        <div className="auto-btn1-4"></div>
+                        <div className="auto-btn2-4"></div>
+                      </div>
+                    </div>
+
+                    <div className="manual-navigation-4">
+                      <label htmlFor="radio1" className="manual-btn-4"></label>
+                      <label htmlFor="radio2" className="manual-btn-4"></label>
+                    </div>
+                  </div>
+
+*/
+
+.slider-4 {
+  margin: 0 auto;
+  border-radius: 25px;
+  width: 340px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.slides-4 {
+  width: 400%;
+  height: 400px;
+  display: flex;
+}
+
+.slides-4 input {
+  display: none;
+}
+
+.slide-4 {
+  width: 25%;
+  position: relative;
+  transition: 2s;
+}
+
+.slide-4 img {
+  width: 350px;
+}
+
+.manual-navigation-4 {
+  position: absolute;
+  width: 350px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn-4 {
+  border: 2px solid #fff;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.manual-btn-4:not(:last-child) {
+  margin-right: 40px;
+}
+
+.manual-btn-4:hover {
+  background-color: #fff;
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+
+#radio1:checked ~ .first {
+  margin-left: -25%;
+}
+
+.navigation-auto-4 div {
+  border: 2px solid #fff;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.navigation-auto-4 {
+  position: absolute;
+  display: flex;
+  width: 350px;
+  justify-content: center;
+  margin-top: 360px;
+}
+
+.navigation-auto-4 div:not(:last-child) {
+  margin-right: 40px;
+}
+
+#radio1-4:checked ~ .navigation-auto .auto-btn1-4 {
+  background-color: #fff;
+}
+
+#radio2-4:checked ~ .navigation-auto .auto-btn-4 {
+  background-color: #fff;
 }

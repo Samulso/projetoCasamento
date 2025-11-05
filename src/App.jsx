@@ -78,22 +78,10 @@ function App() {
           <h1>“Doce união entre sabores e olhares.”</h1>
           <p>Fotos capturadas pelos alunos de Desenvolvimento de Sistemas</p>
         </div>
-<<<<<<< HEAD
         <div className="back-imgs">
           <img className="img_1" src="\src\assets\img\img_2.png" alt="" />
           <img className="img_2" src="\src\assets\img\img_1.png" alt="" />
         </div>
-        
-=======
-
-        <img
-          className="img_1"
-          src="\src\assets\img\img_2.png"
-          alt=""
-          data-aos="zoom-in-down"
-        />
-        <img className="img_2" src="\src\assets\img\img_1.png" alt="" />
->>>>>>> 7268abb42ad8699b1d83e9fc5b18720650a51870
 
         <img className="wave" src="src\assets\wave.svg" alt="" />
       </section>
@@ -217,19 +205,15 @@ function App() {
                 <h3>Chef Poliana</h3>
                 <br></br>
                 <p>
-                  🧂 <span className="t-001">Ingredientes</span> (para cerca de 20 unidades)
+                  🧂 <span className="t-001">Ingredientes</span> (para cerca de
+                  20 unidades)
                   <br></br>
-                  <br></br>
-                  ✲ 1 lata (395 g) de leite condensado
-                  <br></br>
-                  ✲ 100 ml de leite integral
-                  <br></br>
-                  ✲ 1 colher (sopa) de manteiga sem sal
-                  <br></br>
-                  ✲ 1/2 xícara (chá) de capim-santo picado (folhas
+                  <br></br>✲ 1 lata (395 g) de leite condensado
+                  <br></br>✲ 100 ml de leite integral
+                  <br></br>✲ 1 colher (sopa) de manteiga sem sal
+                  <br></br>✲ 1/2 xícara (chá) de capim-santo picado (folhas
                   frescas)
-                  <br></br>
-                  ✲ Açúcar cristal ou coco ralado fino para enrolar
+                  <br></br>✲ Açúcar cristal ou coco ralado fino para enrolar
                   <br></br>
                   <br></br>
                   (Opcional: 50 g de chocolate branco picado para textura mais
@@ -244,30 +228,23 @@ function App() {
                   <h2>Macaron Francês</h2>
                   <h4 className="chef-name">Chef Poliana</h4>
                   <p>
-                    🧂 <span className="t-001">Ingredientes</span> (rendimento: aprox. 25 unidades)
-                    <br></br><br></br>
-
+                    🧂 <span className="t-001">Ingredientes</span> (rendimento:
+                    aprox. 25 unidades)
+                    <br></br>
+                    <br></br>
                     <span className="t-001">Para as conchas:</span>
-                    <br></br>
-                    ✲ 120 g de farinha de amêndoas bem peneirada
-                    <br></br>
-                    ✲ 200 g de açúcar de confeiteiro
-                    <br></br>
-                    ✲ 100 g de claras (aprox. 3 unidades)
-                    <br></br>
-                    ✲ 30 g de açúcar refinado
-                    <br></br>
-                    ✲ Corante em gel (opcional)
+                    <br></br>✲ 120 g de farinha de amêndoas bem peneirada
+                    <br></br>✲ 200 g de açúcar de confeiteiro
+                    <br></br>✲ 100 g de claras (aprox. 3 unidades)
+                    <br></br>✲ 30 g de açúcar refinado
+                    <br></br>✲ Corante em gel (opcional)
                     <br></br>
                     <br></br>
-                    <span className="t-001">Para o recheio</span> (ganache de chocolate):
-                    <br></br>
-                    ✲ 150 g de chocolate meio amargo picado
-                    <br></br>
-                    ✲ 80 ml de creme de leite fresco
-                    <br></br>
-                    ✲ 1 colher (sopa) de manteiga sem sal
-
+                    <span className="t-001">Para o recheio</span> (ganache de
+                    chocolate):
+                    <br></br>✲ 150 g de chocolate meio amargo picado
+                    <br></br>✲ 80 ml de creme de leite fresco
+                    <br></br>✲ 1 colher (sopa) de manteiga sem sal
                   </p>
 
                   <h3>
@@ -281,76 +258,129 @@ function App() {
                 </div>
 
                 <img src="\src\assets\img\recipe2.png" alt="" />
-<<<<<<< HEAD
-
               </div>
             </div>
             <div className="recipes3-4">
               <div className="recipe3">
                 <h1>Caldo verde</h1>
                 <h2>Chef Nilda</h2>
-                <div className="slider">
-                  <div className="slides">
+                <div className="recipe3-carousel-field">
+                  <div className="slider">
+                    <div className="slides">
+                      {/*radio buttons*/}
 
-                    {/*radio buttons*/}
+                      <input type="radio" name="radio-btn" id="radio1" />
+                      <input type="radio" name="radio-btn" id="radio2" />
 
-                    <input type="radio" name="radio-btn" id="radio1" />
-                    <input type="radio" name="radio-btn" id="radio2" />
+                      {/*slide images*/}
 
-                    {/*slide images*/}
+                      <div className="slide first">
+                        <img src="\src\assets\img\recipe3-1.png" alt="" />
+                      </div>
+                      <div className="slide">
+                        <img src="\src\assets\img\recipe3-2.png" alt="" />
+                      </div>
 
-                    <div className="slide first">
-                      <img src="\src\assets\img\recipe3-1.png" alt="" />
+                      <div className="navigation-auto">
+                        <div className="auto-btn1"></div>
+                        <div className="auto-btn2"></div>
+                      </div>
                     </div>
-                    <div className="slide">
-                      <img src="\src\assets\img\recipe3-2.png" alt="" />
-                    </div>
 
-                    <div className="navigation-auto">
-                      <div className="auto-btn1"></div>
-                      <div className="auto-btn2"></div>
+                    <div className="manual-navigation">
+                      <label htmlFor="radio1" className="manual-btn"></label>
+                      <label htmlFor="radio2" className="manual-btn"></label>
                     </div>
-
                   </div>
-
-                  <div className="manual-navigation">
-                    <label htmlFor="radio1" className="manual-btn"></label>
-                    <label htmlFor="radio2" className="manual-btn"></label>
-                  </div>
-
+                  <h3>
+                    Em 2011, foi eleito uma das 7 Maravilhas da Gastronomia de
+                    Portugal, o que demonstra sua importância cultural e
+                    culinária no país.
+                    <br></br>
+                    <br></br>O caldo verde é presença obrigatória nas festas
+                    populares. Está presente nos arraiais
+                    <br></br>
+                    <br></br>A receita original é feita com couve-galega (
+                    cortadas em xifonade) (cortada em tiras muito finas),
+                    batatas, azeite, alho e cebola, e tradicionalmente leva uma
+                    rodela de chouriço na hora de servir.
+                  </h3>
                 </div>
-                <h3></h3>
               </div>
+
               <div className="recipe4">
-                <h1></h1>
-                <h2></h2>
-                <img src="" alt="" />
-                <h3></h3>
-=======
->>>>>>> 7268abb42ad8699b1d83e9fc5b18720650a51870
+                <h1>Caldo verde</h1>
+                <h2>Chef Nilda</h2>
+                <div className="recipe4-carousel-field">
+                  <div className="slider-4">
+                    <div className="slides-4">
+                      {/*radio buttons*/}
+
+                      <input type="radio" name="radio-btn-4" id="radio1" />
+                      <input type="radio" name="radio-btn-4" id="radio2" />
+
+                      {/*slide images*/}
+
+                      <div className="slide-4 first">
+                        <img src="\src\assets\img\recipe3-1.png" alt="" />
+                      </div>
+                      <div className="slide-4">
+                        <img src="\src\assets\img\recipe3-2.png" alt="" />
+                      </div>
+
+                      <div className="navigation-auto-4">
+                        <div className="auto-btn1-4"></div>
+                        <div className="auto-btn2-4"></div>
+                      </div>
+                    </div>
+
+                    <div className="manual-navigation-4">
+                      <label htmlFor="radio1-4" className="manual-btn-4"></label>
+                      <label htmlFor="radio2-4" className="manual-btn-4"></label>
+                    </div>
+                  </div>
+                  <h3>
+                    Em 2011, foi eleito uma das 7 Maravilhas da Gastronomia de
+                    Portugal, o que demonstra sua importância cultural e
+                    culinária no país.
+                    <br></br>
+                    <br></br>O caldo verde é presença obrigatória nas festas
+                    populares. Está presente nos arraiais
+                    <br></br>
+                    <br></br>A receita original é feita com couve-galega (
+                    cortadas em xifonade) (cortada em tiras muito finas),
+                    batatas, azeite, alho e cebola, e tradicionalmente leva uma
+                    rodela de chouriço na hora de servir.
+                  </h3>
+                </div>
               </div>
             </div>
           </div>
 
-          <div className="recipe-rigth-content">
+          <div className="recipe-rigth-content2">
             <h1>Preparo</h1>
             <p>
-              Cada prato começa com um gesto simples — o corte, o cheiro, o som
-              da panela. Aqui, cada ingrediente ganha significado nas mãos de
-              quem prepara com amor. O preparo é mais do que técnica: é cuidado,
-              é partilha, é aprendizado.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, consequatur illo? A illum velit tempora earum inventore sapiente minus repellendus omnis excepturi nihil laborum totam, non, cupiditate sunt voluptatem recusandae?
               <br></br>
               <br></br>
-              Entre risadas e conversas, o tempo parece desacelerar. O vapor, o
-              aroma e as cores se misturam, criando memórias que vão muito além
-              do sabor. É nesse instante que a cozinha deixa de ser apenas um
-              espaço físico e se transforma em um lugar de afeto — onde cada
-              movimento carrega um propósito, e cada receita guarda uma
-              história.
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis harum officia nam ad, fuga ut deleniti porro dolorum minima asperiores nulla facere non eos aspernatur praesentium corporis aut modi accusamus.
               <br></br>
               <br></br>
-              Porque cozinhar, antes de tudo, é um ato de conexão: com o
-              alimento, com o outro e com o que há de mais humano em nós.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita laboriosam fugit minus vel eos doloremque iusto repellat accusamus obcaecati, facere, veniam totam aliquam iure minima repudiandae laborum deleniti nisi quaerat!
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident facere harum quis nobis tenetur earum nam atque repellendus magnam excepturi molestiae, tempora, recusandae quod dolores mollitia velit, doloribus dicta consequatur?
+              <br></br>
+              <br></br>
+              <br></br>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis soluta nihil iusto sit quo odio quasi! Assumenda aliquam eius nihil incidunt ex quam id, minus provident fugit necessitatibus. Quasi, mollitia.
+              <br></br>
+              <br></br>
+              <br></br>
             </p>
           </div>
         </div>
