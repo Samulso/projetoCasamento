@@ -285,10 +285,12 @@ header {
   font-family: "Cormorant Garamond", serif;
   margin-bottom: 10%;
   margin-top: 10%;
+  color: #5C3A41;
 }
 
 .left-content p {
   font-size: 1.2rem;
+  color: #5C3A41;
 }
 
 .forma-l {
@@ -303,7 +305,7 @@ header {
   z-index: 2;
 }
 
-/* Adiciona curvas nos cantos internos usando pseudo-elementos */
+
 .forma-l::before {
   content: "";
   position: absolute;
@@ -311,7 +313,7 @@ header {
   right: 29.1%;
   width: 200px;
   height: 200px;
-  background-color: #000000; /* mesma cor do fundo da seção */
+  background-color: #000000;
   background: radial-gradient(
     circle at bottom left,
     transparent 200px,
@@ -326,7 +328,7 @@ header {
   left: 29.1%;
   width: 200px;
   height: 200px;
-  background-color: #000000; /* mesma cor do fundo da seção */
+  background-color: #000000; 
   background: radial-gradient(
     circle at top right,
     transparent 200px,
@@ -583,7 +585,8 @@ header {
   object-fit: cover;
 }
 
-.slider {
+/* Slider Primary (recipe3) */
+.slider-primary {
   margin: 0 auto;
   border-radius: 25px;
   width: 340px;
@@ -591,27 +594,27 @@ header {
   overflow: hidden;
 }
 
-.slides {
+.slides-primary {
   width: 400%;
   height: 400px;
   display: flex;
 }
 
-.slides input {
+.slides-primary input {
   display: none;
 }
 
-.slide {
+.slide-primary {
   width: 25%;
   position: relative;
   transition: 2s;
 }
 
-.slide img {
+.slide-primary img {
   width: 350px;
 }
 
-.manual-navigation {
+.manual-navigation-primary {
   position: absolute;
   width: 350px;
   margin-top: -40px;
@@ -619,7 +622,7 @@ header {
   justify-content: center;
 }
 
-.manual-btn {
+.manual-btn-primary {
   border: 2px solid #fff;
   padding: 5px;
   border-radius: 10px;
@@ -627,23 +630,24 @@ header {
   transition: 0.5s;
 }
 
-.manual-btn:not(:last-child) {
+.manual-btn-primary:not(:last-child) {
   margin-right: 40px;
 }
 
-.manual-btn:hover {
+.manual-btn-primary:hover {
   background-color: #fff;
 }
 
-#radio1:checked ~ .first {
+#radioP1:checked ~ .first-primary {
   margin-left: 0;
 }
 
-#radio1:checked ~ .first {
+#radioP2:checked ~ .first-primary {
   margin-left: -25%;
 }
 
-.navigation-auto div {
+
+.navigation-auto-primary div {
   border: 2px solid #fff;
   padding: 5px;
   border-radius: 10px;
@@ -651,7 +655,7 @@ header {
   transition: 0.5s;
 }
 
-.navigation-auto {
+.navigation-auto-primary {
   position: absolute;
   display: flex;
   width: 350px;
@@ -659,15 +663,112 @@ header {
   margin-top: 360px;
 }
 
-.navigation-auto div:not(:last-child) {
+.navigation-auto-primary div:not(:last-child) {
   margin-right: 40px;
 }
 
-#radio1:checked ~ .navigation-auto .auto-btn1 {
+#radioP1:checked ~ .navigation-auto-primary .auto-btn-primary-1 {
+  background-color: #fff;
+}  
+
+#radioP2:checked ~ .navigation-auto-primary .auto-btn-primary-2 {
   background-color: #fff;
 }
 
-#radio2:checked ~ .navigation-auto .auto-btn2 {
+/* Slider Secondary (recipe4) */
+.slider-secondary {
+  margin: 0 auto;
+  border-radius: 25px;
+  width: 340px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.slides-secondary {
+  width: 400%;
+  height: 400px;
+  display: flex;
+}
+
+.slides-secondary input {
+  display: none;
+}
+
+.slide-secondary {
+  width: 25%;
+  position: relative;
+  transition: 2s;
+}
+
+.slide-secondary img {
+  width: 350px;
+}
+
+.manual-navigation-secondary {
+  position: absolute;
+  width: 350px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn-secondary {
+  border: 2px solid #fff;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.manual-btn-secondary:not(:last-child) {
+  margin-right: 40px;
+}
+
+.manual-btn-secondary:hover {
+  background-color: #fff;
+}
+
+#radioS1:checked ~ .first-secondary {
+  margin-left: 0;
+}
+
+#radioS2:checked ~ .first-secondary {
+  margin-left: -25%;
+}
+
+#radioS3:checked ~ .first-secondary {
+  margin-left: -50%;
+}
+
+.navigation-auto-secondary div {
+  border: 2px solid #fff;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.navigation-auto-secondary {
+  position: absolute;
+  display: flex;
+  width: 350px;
+  justify-content: center;
+  margin-top: 360px;
+}
+
+.navigation-auto-secondary div:not(:last-child) {
+  margin-right: 40px;
+}
+
+#radioS1:checked ~ .navigation-auto-secondary .auto-btn-secondary-1 {
+  background-color: #fff;
+}
+
+#radioS2:checked ~ .navigation-auto-secondary .auto-btn-secondary-2 {
+  background-color: #fff;
+}
+
+#radioS3:checked ~ .navigation-auto-secondary .auto-btn-secondary-3 {
   background-color: #fff;
 }
 
@@ -675,7 +776,8 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap:12px;
+  gap: 12px;
+  height:100vh;
   margin-top: 10%;
 }
 
@@ -687,7 +789,22 @@ header {
   margin-top: 5%;
 }
 
+.recipe4-carousel-field {
+  display: flex;
+  margin: 25px auto;
+  flex-direction: column;
+  width: 80%;
+  margin-top: 5%;
+}
+
 .recipe3-carousel-field h3{
+  margin-top: 5%;
+  font-size: 16px;
+  text-indent: 2em;
+  font-family: "cormorant garand";
+}
+
+.recipe4-carousel-field h3 {
   margin-top: 5%;
   font-size: 16px;
   text-indent: 2em;
@@ -715,144 +832,57 @@ header {
 }
 
 .recipe4 {
-  content: '';
   width: 50%;
-  margin-top: 10%;
+  margin-top: 20%;
+  height: 100%;
 }
 
-.recipe-rigth-content2 {
-  position: relative;
-  margin-right: 7%;
-  background-color: #ffbeba;
-  padding: 60px 40px;
-  z-index: 1;
-  width: 25%;
-  min-height: 300vh;
-}
-
-.recipe-rigth-content2 h1 {
+.recipe-rigth-content h1 {
   font-size: 4rem;
   font-family: "Cormorant Garamond", serif;
   margin-bottom: 10%;
   margin-top: 10%;
+  color: #5C3A41;
 }
 
-.recipe-rigth-content2 p {
+.recipe-rigth-content p {
   font-size: 1.2rem;
+  color: #5C3A41;
 }
+
+.recipe-rigth-content-img-field {
+  padding: 2rem;
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+}
+
+.recipe-rigth-content-img-field img{
+  border-radius: 12px;
+  margin-top: 5%;
+
+}
+
+.recipe-rigth-content-img-field h5{
+  margin-top: 1%;
+  display: flex;
+  right: 0;
+  justify-content: right;
+  color: #802E4C;
+  font-size: 1.3rem;
+  font-family: "Cormorant Garamond", serif;
+
+}
+
+
+
 /*
-<div className="slides-4">
-                      
-                      <input type="radio" name="radio-btn-4" id="radio1" />
-                      <input type="radio" name="radio-btn-4" id="radio2" />
-
-                      
-
-                      <div className="slide first">
-                        <img src="\src\assets\img\recipe3-1.png" alt="" />
-                      </div>
-                      <div className="slide">
-                        <img src="\src\assets\img\recipe3-2.png" alt="" />
-                      </div>
-
-                      <div className="navigation-auto-4">
-                        <div className="auto-btn1-4"></div>
-                        <div className="auto-btn2-4"></div>
-                      </div>
-                    </div>
-
-                    <div className="manual-navigation-4">
-                      <label htmlFor="radio1" className="manual-btn-4"></label>
-                      <label htmlFor="radio2" className="manual-btn-4"></label>
-                    </div>
-                  </div>
-
+<div className="recipe-rigth-content-img-field">
+              <img src="\src\assets\img\recipe-rigth-content-image1.jpg" alt="" />
+                      <h5>Pão delicia</h5>
+              <img src="\src\assets\img\recipe-rigth-content-image2.jpg" alt="" />
+                      <h5>Brigadeiro Alcoólico</h5>
+              <img src="\src\assets\img\recipe-rigth-content-image3.jpg" alt="" />
+                      <h5>Olho de Sogra</h5>
+            </div>
 */
-
-.slider-4 {
-  margin: 0 auto;
-  border-radius: 25px;
-  width: 340px;
-  height: 400px;
-  overflow: hidden;
-}
-
-.slides-4 {
-  width: 400%;
-  height: 400px;
-  display: flex;
-}
-
-.slides-4 input {
-  display: none;
-}
-
-.slide-4 {
-  width: 25%;
-  position: relative;
-  transition: 2s;
-}
-
-.slide-4 img {
-  width: 350px;
-}
-
-.manual-navigation-4 {
-  position: absolute;
-  width: 350px;
-  margin-top: -40px;
-  display: flex;
-  justify-content: center;
-}
-
-.manual-btn-4 {
-  border: 2px solid #fff;
-  padding: 5px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: 0.5s;
-}
-
-.manual-btn-4:not(:last-child) {
-  margin-right: 40px;
-}
-
-.manual-btn-4:hover {
-  background-color: #fff;
-}
-
-#radio1:checked ~ .first {
-  margin-left: 0;
-}
-
-#radio1:checked ~ .first {
-  margin-left: -25%;
-}
-
-.navigation-auto-4 div {
-  border: 2px solid #fff;
-  padding: 5px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: 0.5s;
-}
-
-.navigation-auto-4 {
-  position: absolute;
-  display: flex;
-  width: 350px;
-  justify-content: center;
-  margin-top: 360px;
-}
-
-.navigation-auto-4 div:not(:last-child) {
-  margin-right: 40px;
-}
-
-#radio1-4:checked ~ .navigation-auto .auto-btn1-4 {
-  background-color: #fff;
-}
-
-#radio2-4:checked ~ .navigation-auto .auto-btn-4 {
-  background-color: #fff;
-}
