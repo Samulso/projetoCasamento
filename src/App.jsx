@@ -4,40 +4,13 @@ import { useState, useEffect } from "react";
 import "./App.css";
 import GalleryCarousel from "./GalleryCarousel";
 import Carousel from "./Carousel.jsx";
-import foto1 from "./assets/img/foto1Ap.jpg";
-import foto2 from "./assets/img/foto2Ap.jpg";
-import foto3 from "./assets/img/foto3Ap.jpg";
-import foto4 from "./assets/img/foto4AP.jpg";
+
+// Importar todas as imagens do arquivo centralizado
+import { images, galeriaImages, slidesApresentacao } from "./imageImports";
 
 function App() {
   const [currentSlide, setCurrentSlide] = useState(1);
   const [currentSlideSecondary, setCurrentSlideSecondary] = useState(1);
-
-  const galeriaImages = [
-    {
-      url: "/src/assets/img/preparo1.png",
-    },
-    {
-      url: "/src/assets/img/preparo2.png",
-    },
-    {
-      url: "/src/assets/img/preparo3.png",
-    },
-    {
-      url: "/src/assets/img/preparo4.png",
-    },
-    {
-      url: "/src/assets/img/preparo5.png",
-    },
-    {
-      url: "/src/assets/img/preparo6.png",
-    },
-    {
-      url: "/src/assets/img/preparo7.png",
-    },
-  ];
-
-  const slides = [foto1, foto2, foto3, foto4];
 
   useEffect(() => {
     AOS.init({
@@ -77,7 +50,7 @@ function App() {
             </li>
           </ul>
 
-          <img className="header-img" src="\src\assets\img\logo.png" alt="" />
+          <img className="header-img" src={images.logo} alt="Logo" />
 
           <ul id="nav_list">
             <li className="nav-item">
@@ -97,18 +70,18 @@ function App() {
           <p>Fotos capturadas pelos alunos de Desenvolvimento de Sistemas</p>
         </div>
         <div className="back-imgs">
-          <img className="img_1" src="\src\assets\img\img_2.png" alt="" />
-          <img className="img_2" src="\src\assets\img\img_1.png" alt="" />
+          <img className="img_1" src={images.img2} alt="" />
+          <img className="img_2" src={images.img1} alt="" />
         </div>
 
-        <img className="wave" src="src\assets\wave.svg" alt="" />
+        <img className="wave" src={images.wave} alt="" />
       </section>
 
       {/* Apresentação */}
       <section className="apresentacao" data-aos="fade-right" id="Apresentacao">
         <div className="container">
           <div className="imagem" data-aos="zoom-in">
-            <img src="\src\assets\img\img_2.png" alt="Evento" />
+            <img src={images.img2} alt="Evento" />
           </div>
 
           <div className="texto" data-aos="fade-left">
@@ -134,7 +107,7 @@ function App() {
         </h2>
 
         <Carousel data-aos="zoom-in">
-          {slides.map((s, i) => (
+          {slidesApresentacao.map((s, i) => (
             <img
               key={i}
               src={s}
@@ -155,7 +128,7 @@ function App() {
               controls
               data-aos="zoom-in"
             >
-              <source src="src\assets\vids\videoeditado.mp4" type="video/mp4" />
+              <source src={images.videoEditado} type="video/mp4" />
             </video>
           </div>
         </div>
@@ -207,7 +180,7 @@ function App() {
           <div className="recipe-field">
             <div className="recipe1">
               <div className="recipe1-left-content">
-                <img src="\src\assets\img\recipe1.png" alt="" />
+                <img src={images.recipe1} alt="Brigadeiro de Capim-Santo" />
                 <p>
                   O brigadeiro de capim-santo (ou capim-limão) é uma releitura
                   brasileira moderna de um clássico, que une a tradição do
@@ -272,7 +245,7 @@ function App() {
                   </h3>
                 </div>
 
-                <img src="\src\assets\img\recipe2.png" alt="" />
+                <img src={images.recipe2} alt="Macaron Francês" />
               </div>
             </div>
             <div className="recipes3-4">
@@ -301,10 +274,10 @@ function App() {
                       {/*slide images*/}
 
                       <div className="slide-primary first-primary">
-                        <img src="\src\assets\img\recipe3-1.png" alt="" />
+                        <img src={images.recipe31} alt="Caldo Verde 1" />
                       </div>
                       <div className="slide-primary">
-                        <img src="\src\assets\img\recipe3-2.png" alt="" />
+                        <img src={images.recipe32} alt="Caldo Verde 2" />
                       </div>
 
                       <div className="navigation-auto-primary">
@@ -373,13 +346,13 @@ function App() {
                       />
                       {/*slide images*/}
                       <div className="slide-secondary first-secondary">
-                        <img src="\src\assets\img\recipe4-1.jpg" alt="" />
+                        <img src={images.recipe41} alt="Salada Farfale 1" />
                       </div>
                       <div className="slide-secondary">
-                        <img src="\src\assets\img\recipe4-2.jpg" alt="" />
+                        <img src={images.recipe42} alt="Salada Farfale 2" />
                       </div>
                       <div className="slide-secondary">
-                        <img src="\src\assets\img\recipe4-3.jpg" alt="" />
+                        <img src={images.recipe43} alt="Salada Farfale 3" />
                       </div>
 
                       <div className="navigation-auto-secondary">
@@ -456,18 +429,18 @@ function App() {
 
             <div className="recipe-rigth-content-img-field">
               <img
-                src="\src\assets\img\recipe-rigth-content-image1.jpg"
-                alt=""
+                src={images.recipeRightContent1}
+                alt="Pão delicia"
               />
               <h5>Pão delicia</h5>
               <img
-                src="\src\assets\img\recipe-rigth-content-image2.jpg"
-                alt=""
+                src={images.recipeRightContent2}
+                alt="Brigadeiro Alcoólico"
               />
               <h5>Brigadeiro Alcoólico</h5>
               <img
-                src="\src\assets\img\recipe-rigth-content-image3.jpg"
-                alt=""
+                src={images.recipeRightContent3}
+                alt="Olho de Sogra"
               />
               <h5>Olho de Sogra</h5>
             </div>
@@ -494,7 +467,7 @@ function App() {
             {/* BLOCO 1: Círculo Esquerda e Texto Direita */}
             <div className="bloco-item">
               <img
-                src="\src\assets\img\montagem1.png"
+                src={images.montagem1}
                 alt="Decoração e Acabamento"
                 className="img-circular"
               />
@@ -526,7 +499,7 @@ function App() {
             {/* BLOCO 2: Texto Esquerda e Círculo Direita */}
             <div className="bloco-item">
               <img
-                src="\src\assets\img\montagem2.png"
+                src={images.montagem2}
                 alt="Estrutura e Estabilidade"
                 className="img-circular"
               />
