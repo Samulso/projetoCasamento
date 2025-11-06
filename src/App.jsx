@@ -69,7 +69,26 @@ function App() {
       <section className="hero-section" id="section-1-hero">
         <div className="overlay-content" data-aos="zoom-in">
           <h1>"Doce união entre sabores e olhares."</h1>
-          <p>Fotos capturadas pelos alunos de Desenvolvimento de Sistemas</p>
+          <p>Realização: Auxiliar de Cozinha, Confeitaria e Técnico em Desenvolvimento de Sistemas</p>
+          <div className="instructors-field">
+            <div className="namePlusCourse">
+              <h4>Kelly Bispo</h4>
+              <h5>Tecnologia</h5>
+            </div>
+            <div className="namePlusCourse">
+              <h4>Denyse Muniz</h4>
+              <h5>Gastronomia</h5>
+            </div>
+            <div className="namePlusCourse">
+              <h4>Ana Paula Sabbag</h4>
+              <h5>Gastronomia</h5>
+            </div>
+            
+          </div>
+          <div className="cep">
+              <h5>CEP Jô Rufino e Carlos Aguiar - Senac Taguatinga</h5>
+          </div>
+          
         </div>
         <div className="back-imgs">
           <img className="img_1" src={images.img2} alt="" />

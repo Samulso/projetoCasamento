@@ -4,7 +4,7 @@
 header {
   width: 100%;
   padding: 10px 2%;
-  position: absolute;
+  position: fixed;
   top: 0;
   background-color: #ffd700;
   z-index: 3;
@@ -95,7 +95,7 @@ header {
 
 .hero-section {
   position: relative;
-  height: 90vh;
+  height: 100vh;
   background-color: #fff6f5;
   overflow: hidden;
 }
@@ -1190,4 +1190,38 @@ header {
       font-size: 2rem;
       top: 10px;
   }
+}
+
+.instructors-field {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  font-size: 0.9rem;
+  gap: 90px;
+}
+
+.namePlusCourse {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #5C3A41;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.namePlusCourse h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.namePlusCourse h5 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.cep {
+  margin-top: 3%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-family: "Cormorant Garamond", serif;
 }
