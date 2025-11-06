@@ -36,6 +36,8 @@ function App() {
     return () => clearInterval(interval);
   }, []);
 
+  
+
   return (
     <>
       {/* navbar */}
