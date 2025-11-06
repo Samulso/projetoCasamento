@@ -47,10 +47,9 @@ function App() {
     });
   }, []);
 
-
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentSlide(prev => prev >= 2 ? 1 : prev + 1);
+      setCurrentSlide((prev) => (prev >= 2 ? 1 : prev + 1));
     }, 3000);
 
     return () => clearInterval(interval);
@@ -58,15 +57,11 @@ function App() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentSlideSecondary(prev => prev >= 3 ? 1 : prev + 1);
+      setCurrentSlideSecondary((prev) => (prev >= 3 ? 1 : prev + 1));
     }, 3000);
 
     return () => clearInterval(interval);
   }, []);
-
-
-      
-
 
   return (
     <>
@@ -225,18 +220,15 @@ function App() {
                 <h3>Chef Poliana</h3>
                 <br></br>
                 <p>
-                  🧂 <span className="t-001">Ingredientes</span> (para cerca de 20 unidades)
+                  🧂 <span className="t-001">Ingredientes</span> (para cerca de
+                  20 unidades)
                   <br></br>
-                  <br></br>
-                  ✲ 1 lata (395 g) de leite condensado
-                  <br></br>
-                  ✲ 100 ml de leite integral
-                  <br></br>
-                  ✲ 1 colher (sopa) de manteiga sem sal
-                  <br></br>
-                  ✲ 1/2 xícara (chá) de capim-santo picado (folhas frescas)
-                  <br></br>
-                  ✲ Açúcar cristal ou coco ralado fino para enrolar
+                  <br></br>✲ 1 lata (395 g) de leite condensado
+                  <br></br>✲ 100 ml de leite integral
+                  <br></br>✲ 1 colher (sopa) de manteiga sem sal
+                  <br></br>✲ 1/2 xícara (chá) de capim-santo picado (folhas
+                  frescas)
+                  <br></br>✲ Açúcar cristal ou coco ralado fino para enrolar
                   <br></br>
                   <br></br>
                   (Opcional: 50 g de chocolate branco picado para textura mais
@@ -251,29 +243,23 @@ function App() {
                   <h2>Macaron Francês</h2>
                   <h4 className="chef-name">Chef Poliana</h4>
                   <p>
-                    🧂 <span className="t-001">Ingredientes</span> (rendimento: aprox. 25 unidades)
-                    <br></br><br></br>
-
+                    🧂 <span className="t-001">Ingredientes</span> (rendimento:
+                    aprox. 25 unidades)
+                    <br></br>
+                    <br></br>
                     <span className="t-001">Para as conchas:</span>
-                    <br></br>
-                    ✲ 120 g de farinha de amêndoas bem peneirada
-                    <br></br>
-                    ✲ 200 g de açúcar de confeiteiro
-                    <br></br>
-                    ✲ 100 g de claras (aprox. 3 unidades)
-                    <br></br>
-                    ✲ 30 g de açúcar refinado
-                    <br></br>
-                    ✲ Corante em gel (opcional)
+                    <br></br>✲ 120 g de farinha de amêndoas bem peneirada
+                    <br></br>✲ 200 g de açúcar de confeiteiro
+                    <br></br>✲ 100 g de claras (aprox. 3 unidades)
+                    <br></br>✲ 30 g de açúcar refinado
+                    <br></br>✲ Corante em gel (opcional)
                     <br></br>
                     <br></br>
-                    <span className="t-001">Para o recheio</span> (ganache de chocolate):
-                    <br></br>
-                    ✲ 150 g de chocolate meio amargo picado
-                    <br></br>
-                    ✲ 80 ml de creme de leite fresco
-                    <br></br>
-                    ✲ 1 colher (sopa) de manteiga sem sal
+                    <span className="t-001">Para o recheio</span> (ganache de
+                    chocolate):
+                    <br></br>✲ 150 g de chocolate meio amargo picado
+                    <br></br>✲ 80 ml de creme de leite fresco
+                    <br></br>✲ 1 colher (sopa) de manteiga sem sal
                   </p>
 
                   <h3>
@@ -296,11 +282,22 @@ function App() {
                 <div className="recipe3-carousel-field">
                   <div className="slider-primary">
                     <div className="slides-primary">
-
                       {/*radio buttons*/}
 
-                      <input type="radio" name="radio-btn-primary" id="radioP1" checked={currentSlide === 1} onChange={() => setCurrentSlide(1)} />
-                      <input type="radio" name="radio-btn-primary" id="radioP2" checked={currentSlide === 2} onChange={() => setCurrentSlide(2)} />
+                      <input
+                        type="radio"
+                        name="radio-btn-primary"
+                        id="radioP1"
+                        checked={currentSlide === 1}
+                        onChange={() => setCurrentSlide(1)}
+                      />
+                      <input
+                        type="radio"
+                        name="radio-btn-primary"
+                        id="radioP2"
+                        checked={currentSlide === 2}
+                        onChange={() => setCurrentSlide(2)}
+                      />
                       {/*slide images*/}
 
                       <div className="slide-primary first-primary">
@@ -317,8 +314,16 @@ function App() {
                     </div>
 
                     <div className="manual-navigation-primary">
-                      <label htmlFor="radioP1" className="manual-btn-primary" onClick={() => setCurrentSlide(1)}></label>
-                      <label htmlFor="radioP2" className="manual-btn-primary" onClick={() => setCurrentSlide(2)}></label>
+                      <label
+                        htmlFor="radioP1"
+                        className="manual-btn-primary"
+                        onClick={() => setCurrentSlide(1)}
+                      ></label>
+                      <label
+                        htmlFor="radioP2"
+                        className="manual-btn-primary"
+                        onClick={() => setCurrentSlide(2)}
+                      ></label>
                     </div>
                   </div>
                   <h3>
@@ -343,12 +348,29 @@ function App() {
                 <div className="recipe4-carousel-field">
                   <div className="slider-secondary">
                     <div className="slides-secondary">
-
                       {/*radio buttons*/}
 
-                      <input type="radio" name="radio-btn-secondary" id="radioS1" checked={currentSlideSecondary === 1} onChange={() => setCurrentSlideSecondary(1)} />
-                      <input type="radio" name="radio-btn-secondary" id="radioS2" checked={currentSlideSecondary === 2} onChange={() => setCurrentSlideSecondary(2)} />
-                      <input type="radio" name="radio-btn-secondary" id="radioS3" checked={currentSlideSecondary === 3} onChange={() => setCurrentSlideSecondary(3)} />
+                      <input
+                        type="radio"
+                        name="radio-btn-secondary"
+                        id="radioS1"
+                        checked={currentSlideSecondary === 1}
+                        onChange={() => setCurrentSlideSecondary(1)}
+                      />
+                      <input
+                        type="radio"
+                        name="radio-btn-secondary"
+                        id="radioS2"
+                        checked={currentSlideSecondary === 2}
+                        onChange={() => setCurrentSlideSecondary(2)}
+                      />
+                      <input
+                        type="radio"
+                        name="radio-btn-secondary"
+                        id="radioS3"
+                        checked={currentSlideSecondary === 3}
+                        onChange={() => setCurrentSlideSecondary(3)}
+                      />
                       {/*slide images*/}
                       <div className="slide-secondary first-secondary">
                         <img src="\src\assets\img\recipe4-1.jpg" alt="" />
@@ -368,27 +390,38 @@ function App() {
                     </div>
 
                     <div className="manual-navigation-secondary">
-                      <label htmlFor="radioS1" className="manual-btn-secondary" onClick={() => setCurrentSlideSecondary(1)}></label>
-                      <label htmlFor="radioS2" className="manual-btn-secondary" onClick={() => setCurrentSlideSecondary(2)}></label>
-                      <label htmlFor="radioS3" className="manual-btn-secondary" onClick={() => setCurrentSlideSecondary(3)}></label>
+                      <label
+                        htmlFor="radioS1"
+                        className="manual-btn-secondary"
+                        onClick={() => setCurrentSlideSecondary(1)}
+                      ></label>
+                      <label
+                        htmlFor="radioS2"
+                        className="manual-btn-secondary"
+                        onClick={() => setCurrentSlideSecondary(2)}
+                      ></label>
+                      <label
+                        htmlFor="radioS3"
+                        className="manual-btn-secondary"
+                        onClick={() => setCurrentSlideSecondary(3)}
+                      ></label>
                     </div>
                   </div>
                   <h3>
-                    O farfale nasceu na Itália, criado para aproveitar as 
-                    sobras de massa — mas seu formato de borboleta o tornou 
-                    símbolo de leveza e beleza à mesa. No Brasil, chamamos de gravatinha.
+                    O farfale nasceu na Itália, criado para aproveitar as sobras
+                    de massa — mas seu formato de borboleta o tornou símbolo de
+                    leveza e beleza à mesa. No Brasil, chamamos de gravatinha.
                     <br></br>
                     <br></br>
-                    Aqui, ele ganha cor e vida com a polpa vibrante da pitaya, 
-                    que tinge a massa fresca com um tom delicado e encantador. 
-                    Acompanhando, cubos de filé mignon suíno, dourados no azeite 
+                    Aqui, ele ganha cor e vida com a polpa vibrante da pitaya,
+                    que tinge a massa fresca com um tom delicado e encantador.
+                    Acompanhando, cubos de filé mignon suíno, dourados no azeite
                     com alho, cebola e um toque de pimenta branca.
                     <br></br>
-                    <br></br>
-                    O molho branco, enriquecido com gorgonzola, envolve a 
-                    carne e abraça o farfale num encontro cremoso e aromático. 
-                    Servido em taça, finalizado com uma folha de sálvia e lascas de 
-                    gorgonzola — um pequeno voo de sabor e elegância.
+                    <br></br>O molho branco, enriquecido com gorgonzola, envolve
+                    a carne e abraça o farfale num encontro cremoso e aromático.
+                    Servido em taça, finalizado com uma folha de sálvia e lascas
+                    de gorgonzola — um pequeno voo de sabor e elegância.
                   </h3>
                 </div>
               </div>
@@ -398,34 +431,136 @@ function App() {
           <div className="recipe-rigth-content">
             <h1>Preparo</h1>
             <p>
-              Além dessas, nasceram outras criações — pratos que pareciam traduzir 
-              em sabores a própria beleza do instante. Cada receita revelava um 
-              gesto de carinho, uma busca por harmonia entre o simples e o sofisticado. 
-              Havia cores que lembravam flores, aromas que dançavam pelo ar e texturas 
-              que despertavam memórias — tudo se encontrava como numa cerimônia silenciosa, 
-              onde a comida falava por si.
+              Além dessas, nasceram outras criações — pratos que pareciam
+              traduzir em sabores a própria beleza do instante. Cada receita
+              revelava um gesto de carinho, uma busca por harmonia entre o
+              simples e o sofisticado. Havia cores que lembravam flores, aromas
+              que dançavam pelo ar e texturas que despertavam memórias — tudo se
+              encontrava como numa cerimônia silenciosa, onde a comida falava
+              por si.
               <br></br>
               <br></br>
-              Essas criações, inspiradas pelo espírito de um casamento, uniam doçura 
-              e delicadeza, intensidade e leveza. Havia o calor dos molhos, o brilho 
-              dos temperos, o toque das ervas frescas, e o mistério dos ingredientes
-              que, juntos, formavam algo maior do que a soma de suas partes.
+              Essas criações, inspiradas pelo espírito de um casamento, uniam
+              doçura e delicadeza, intensidade e leveza. Havia o calor dos
+              molhos, o brilho dos temperos, o toque das ervas frescas, e o
+              mistério dos ingredientes que, juntos, formavam algo maior do que
+              a soma de suas partes.
               <br></br>
               <br></br>
-              Cada prato, cuidadosamente disposto, era um convite à contemplação: 
-              uma mistura de arte e emoção, de técnica e sentimento. E quando todos 
-              se reuniram à mesa, o que se serviu não foi apenas comida — mas um 
-              pedaço de sonho, de celebração, de poesia feita sabor.
+              Cada prato, cuidadosamente disposto, era um convite à
+              contemplação: uma mistura de arte e emoção, de técnica e
+              sentimento. E quando todos se reuniram à mesa, o que se serviu não
+              foi apenas comida — mas um pedaço de sonho, de celebração, de
+              poesia feita sabor.
             </p>
 
             <div className="recipe-rigth-content-img-field">
-              <img src="\src\assets\img\recipe-rigth-content-image1.jpg" alt="" />
-                      <h5>Pão delicia</h5>
-              <img src="\src\assets\img\recipe-rigth-content-image2.jpg" alt="" />
-                      <h5>Brigadeiro Alcoólico</h5>
-              <img src="\src\assets\img\recipe-rigth-content-image3.jpg" alt="" />
-                      <h5>Olho de Sogra</h5>
+              <img
+                src="\src\assets\img\recipe-rigth-content-image1.jpg"
+                alt=""
+              />
+              <h5>Pão delicia</h5>
+              <img
+                src="\src\assets\img\recipe-rigth-content-image2.jpg"
+                alt=""
+              />
+              <h5>Brigadeiro Alcoólico</h5>
+              <img
+                src="\src\assets\img\recipe-rigth-content-image3.jpg"
+                alt=""
+              />
+              <h5>Olho de Sogra</h5>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Montagem */}
+      <section className="secao-montagem" id="Montagem">
+        <div className="container-montagem">
+          {/* Título Principal */}
+          <h2 className="titulo-secao">
+            A Arte da Montagem: Detalhes que Fazem a Diferença 🎂
+          </h2>
+          {/* Introdução sobre a filosofia de apresentação */}
+          <p className="filosofia-apresentacao">
+            A apresentação é a primeira impressão. Nossos bolos são montados com
+            precisão artística, garantindo que a experiência visual seja tão
+            rica quanto a gustativa.
+          </p>
+
+          {/* BLOCOS COM CÍRCULOS LADO A LADO */}
+          <div className="blocos-qualidade">
+            {/* BLOCO 1: Círculo Esquerda e Texto Direita */}
+            <div className="bloco-item">
+              <img
+                src="\src\assets\img\montagem1.png"
+                alt="Decoração e Acabamento"
+                className="img-circular"
+              />
+              <div className="bloco-conteudo">
+                <h5>1. Decoração e Acabamento 🎨</h5>
+                <p>
+                  Cada detalhe do bolo é pensado com intenção e harmonia.
+                  Utilizamos técnicas de confeitaria moderna para criar
+                  composições que agradam o olhar e preparam o paladar para o
+                  que está por vir.
+                </p>
+                <ul>
+                  <li>
+                    <strong> ✲Foco na Simetria:</strong> Usamos proporções
+                    perfeitas para guiar o olhar.
+                  </li>
+                  <li>
+                    <strong> ✲Contraste de Cores:</strong> Coberturas e
+                    decorações destacam a elegância do bolo.
+                  </li>
+                  <li>
+                    <strong> ✲Texturas Variadas:</strong> Combinações de
+                    texturas criam interesse visual.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* BLOCO 2: Texto Esquerda e Círculo Direita */}
+            <div className="bloco-item">
+              <img
+                src="\src\assets\img\montagem2.png"
+                alt="Estrutura e Estabilidade"
+                className="img-circular"
+              />
+              <div className="bloco-conteudo">
+                <h5>2. Estrutura e Estabilidade 🏗️</h5>
+                <p>
+                  Garantimos que cada bolo seja estruturado com perfeição,
+                  mantendo a elegância visual. A proporção entre os andares e a
+                  estabilidade são cruciais para uma apresentação impecável.
+                </p>
+                <ul>
+                  <li>
+                    <strong> ✲Camadas Bem Distribuídas:</strong> Cada andar é
+                    equilibrado e proporcional.
+                  </li>
+                  <li>
+                    <strong> ✲Recheios de Qualidade:</strong> Ingredientes
+                    premium garantem sabor e textura.
+                  </li>
+                  <li>
+                    <strong> ✲Finalização Sofisticada:</strong> Toque final com
+                    flores, frutas ou elementos decorativos.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div className="conclusao-montagem">
+            <p>
+              É essa dedicação em cada etapa, desde a seleção dos ingredientes
+              até a montagem final, que transforma um simples bolo em uma
+              <strong> experiência gastronômica de luxo </strong>
+            </p>
           </div>
         </div>
       </section>

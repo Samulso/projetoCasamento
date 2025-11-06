@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap');
 
 header {
   width: 100%;
@@ -469,7 +470,21 @@ header {
   padding: 60px 40px;
   z-index: 1;
   width: 25%;
-  min-height: 300vh;
+  height: 100%;
+}
+
+.recipe-rigth-content::after {
+  content: "";
+  position: absolute;
+  bottom: -7%;
+  left: 0;
+  width: 100%;
+  height: 250px;
+  margin: 0px auto;
+  background-color: #ffbeba;
+  border-bottom-right-radius: 100%;
+  border-bottom-left-radius: 100%;
+  z-index: 8;
 }
 
 .recipe-field {
@@ -874,15 +889,305 @@ header {
 
 }
 
+/* Seção de Montagem */
+.secao-montagem {
+  padding: 100px 0;
+  background-color: #fff6f4dc;
+  background: linear-gradient(180deg, #ffbeba 0%, #ffbeba 100%); 
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); 
+  position: relative;
+  overflow: hidden;
+}
+
+.secao-montagem::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: 0;
+    background-color: #071877dc;
+    width: 100%;
+    height: 190px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 150"><path fill="%23fce4e5" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,149.3C384,139,480,85,576,85.3C672,85,768,139,864,138.7C960,139,1008,128,1032,122.7L1000,0L0,0Z"></path></svg>') no-repeat center bottom;
+    background-size: cover;
+    opacity: 0.6; 
+    z-index: 1; 
+}
+
+.secao-montagem::after {
+    content: '';
+    position: absolute;
+    bottom: -50px;
+    right: 0;
+    width: 100%;
+    height: 150px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 150"><path fill="%23fce4e5" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,149.3C384,139,480,85,576,85.3C672,85,768,139,864,138.7C960,139,1008,128,1032,122.7L1000,0L0,0Z"></path></svg>') no-repeat center top;
+    background-size: cover;
+    opacity: 0.6;
+    transform: scaleX(-1);
+    z-index: 1;
+}
+
+.container-montagem {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+  position: relative; 
+  z-index: 2;
+}
+
+.titulo-secao {
+  font-size: 3.2rem; 
+  color: #5a3d3d;
+  margin-top: 10%;
+  margin-bottom: 30px;
+  font-family: "Cormorant Garamond", serif;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 15px;
+
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.titulo-secao::after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 3px;
+  background-color: #ffbeba; 
+  margin: 15px auto 0; 
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(255, 190, 186, 0.5); 
+}
+
+.filosofia-apresentacao {
+  font-size: 1.4rem;
+  color: #707070;
+  margin-bottom: 60px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.8;
+  text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.02); 
+}
+
+.blocos-qualidade {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  margin-bottom: 70px;
+}
+
+.bloco-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  padding: 50px;
+  background-color: #ffffff; 
+  border-radius: 25px; 
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1); 
+  border: 2px solid #000000; 
+}
+
+.bloco-item:hover {
+  transform: translateY(-12px) scale(1.01);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15), 0 0 15px #ffbeba; 
+  background-color: #fffafb;
+  border-color: #000000;
+}
+
+.bloco-item:nth-child(2) {
+  flex-direction: row-reverse;
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1); 
+}
 
 
-/*
-<div className="recipe-rigth-content-img-field">
-              <img src="\src\assets\img\recipe-rigth-content-image1.jpg" alt="" />
-                      <h5>Pão delicia</h5>
-              <img src="\src\assets\img\recipe-rigth-content-image2.jpg" alt="" />
-                      <h5>Brigadeiro Alcoólico</h5>
-              <img src="\src\assets\img\recipe-rigth-content-image3.jpg" alt="" />
-                      <h5>Olho de Sogra</h5>
-            </div>
-*/
+.img-circular {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 12px double #f3973b; 
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15), 0 0 0 5px #ffbeba;
+  flex-shrink: 0;
+}
+
+.bloco-conteudo {
+  flex: 1;
+  text-align: left;
+}
+
+.bloco-item h5 {
+  font-size: 2.2rem;
+  color: #5a3d3d;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-family: "Cormorant Garamond", serif;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.03);
+}
+
+.bloco-item p {
+  font-size: 1.25rem;
+  color: #4a4a4a;
+  line-height: 1.9;
+  margin-bottom: 30px;
+}
+
+.bloco-item ul {
+  margin-left: 30px;
+  color: #5a3d3d;
+}
+
+.bloco-item li {
+  margin-bottom: 15px; 
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #5a3d3d;
+}
+
+.conclusao-montagem {
+  padding: 45px;
+  background-color: #fff8f0;
+  border-radius: 25px; 
+  margin-bottom: 10%;
+  border-top: 8px solid #ffffff;
+  box-shadow: 0 -5px 20px rgba(155, 90, 163, 0.3); 
+  position: relative;
+  overflow: hidden;
+}
+
+.conclusao-montagem::before {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2.5rem;
+    color: rgba(242, 140, 40, 0.3); 
+    z-index: 0;
+}
+
+
+.conclusao-montagem p {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #a87932; 
+  line-height: 1.8;
+  font-family: "Cormorant Garamond", serif;
+  position: relative;
+  z-index: 1;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+  .titulo-secao {
+      font-size: 2.5rem;
+  }
+  .titulo-secao::after {
+      width: 100px;
+      height: 2px;
+  }
+  .filosofia-apresentacao {
+      font-size: 1.3rem;
+  }
+  .bloco-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    padding: 40px;
+    border-radius: 20px; 
+  }
+
+  .bloco-item:nth-child(2) {
+    flex-direction: column;
+  }
+
+  .bloco-conteudo {
+    text-align: center;
+  }
+
+  .bloco-item ul {
+    margin-left: 0;
+    padding-left: 40px;
+    text-align: left;
+  }
+
+  .img-circular {
+    width: 220px;
+    height: 220px;
+    border: 10px double #000000;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1), 0 0 0 4px #0a0909;
+  }
+  .bloco-item h5 {
+      font-size: 1.8rem;
+  }
+  .bloco-item p {
+      font-size: 1.15rem;
+  }
+  .conclusao-montagem {
+      padding: 35px;
+      border-radius: 20px;
+  }
+  .conclusao-montagem p {
+      font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .secao-montagem {
+      padding: 70px 0;
+  }
+  .titulo-secao {
+    font-size: 2rem;
+  }
+  .titulo-secao::after {
+      width: 80px;
+      height: 2px;
+  }
+  .filosofia-apresentacao {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+  }
+  .bloco-item {
+    padding: 25px;
+    gap: 20px;
+    border-radius: 15px;
+  }
+
+  .bloco-item h5 {
+    font-size: 1.5rem;
+  }
+
+  .bloco-item p {
+    font-size: 1.05rem;
+  }
+  .bloco-item ul {
+      margin-left: 15px;
+      padding-left: 20px;
+  }
+  .bloco-item li {
+      font-size: 1rem;
+  }
+
+  .img-circular {
+    width: 160px;
+    height: 160px;
+    border: 8px double #f28c28;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 0 0 3px #ffbeba;
+  }
+  .conclusao-montagem {
+      padding: 25px;
+      border-top: 5px solid #f28c28;
+      border-radius: 15px;
+  }
+  .conclusao-montagem p {
+      font-size: 1.2rem;
+  }
+  .conclusao-montagem::before {
+      font-size: 2rem;
+      top: 10px;
+  }
+}
