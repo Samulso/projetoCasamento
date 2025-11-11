@@ -1135,379 +1135,8 @@ header {
    RESPONSIVIDADE
    ======================================== */
 
-/* Tablet Grande - 1024px */
-@media (max-width: 1024px) {
-  html, body {
-    overflow-x: hidden !important;
-    max-width: 100vw !important;
-  }
 
-  * {
-    max-width: 100%;
-  }
 
-  .faixa-back {
-    left: -5%;
-    width: 150%;
-  }
-
-  #navbar {
-    height: 100px;
-    padding: 0 20px;
-  }
-
-  #nav_list {
-    gap: 30px;
-  }
-
-  .nav-item a {
-    font-size: 18px;
-  }
-
-  .header-img {
-    height: 60%;
-    margin-left: 2%;
-    margin-right: 2%;
-  }
-
-  .overlay-content h1 {
-    font-size: 2.2rem;
-  }
-
-  .overlay-content p {
-    font-size: 0.75rem;
-  }
-
-  .instructors-field {
-    gap: 50px;
-  }
-
-  .img_1, .img_2 {
-    width: 40vw;
-  }
-
-  .container {
-    max-width: 900px;
-    gap: 30px;
-  }
-
-  .imagem img {
-    width: 380px;
-  }
-
-  .texto h2 {
-    font-size: 1.8rem;
-  }
-
-  .left-content {
-    width: 30%;
-    padding: 40px 30px;
-  }
-
-  .left-content h1 {
-    font-size: 3.2rem;
-  }
-
-  .left-content p {
-    font-size: 1.1rem;
-  }
-
-  .recipe-rigth-content {
-    width: 30%;
-  }
-
-  .recipe-field {
-    width: 60%;
-  }
-
-  .recipe1-left-content img {
-    width: 100%;
-    max-width: 380px;
-    height: 220px;
-  }
-
-  .recipe2-content img {
-    width: 100%;
-    max-width: 380px;
-  }
-}
-
-/* Tablet - 768px */
-@media (max-width: 768px) {
-  html, body {
-    overflow-x: hidden !important;
-    max-width: 100vw !important;
-  }
-
-  * {
-    max-width: 100%;
-  }
-
-  .faixa-back {
-    left: -5%;
-    width: 150%;
-  }
-
-  #navbar {
-    height: auto;
-    flex-direction: column;
-    padding: 15px 10px;
-    gap: 15px;
-  }
-
-  #nav_list {
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .nav-item a {
-    font-size: 16px;
-  }
-
-  .header-img {
-    height: 50px;
-    margin: 10px 0;
-  }
-
-  .hero-section {
-    height: 80vh;
-  }
-
-  .overlay-content {
-    margin-top: 20%;
-    padding: 0 20px;
-  }
-
-  .overlay-content h1 {
-    font-size: 1.8rem;
-  }
-
-  .overlay-content p {
-    font-size: 0.7rem;
-  }
-
-  .instructors-field {
-    flex-direction: column;
-    gap: 20px;
-    margin-top: 30px;
-  }
-
-  .img_1, .img_2 {
-    width: 50vw;
-  }
-
-  .apresentacao {
-    padding: 40px 20px;
-  }
-
-  .container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .imagem img {
-    width: 100%;
-    max-width: 500px;
-  }
-
-  .texto h2 {
-    font-size: 1.6rem;
-  }
-
-  .App {
-    padding: 2rem;
-  }
-
-  .text-2xl {
-    font-size: 1.5rem;
-    margin-top: 5%;
-  }
-
-  .preparo {
-    padding-bottom: 150px;
-  }
-
-  .faixa-back {
-    height: 300px;
-    top: 10%;
-    width: 130%;
-  }
-
-  .preparo-field {
-    flex-direction: column;
-  }
-
-  .left-content {
-    width: 85%;
-    margin: 20px auto;
-  }
-
-  .left-content h1 {
-    font-size: 2.8rem;
-    text-align: center;
-  }
-
-  .left-content p {
-    font-size: 1rem;
-    text-align: justify;
-  }
-
-  .forma-l {
-    width: 90%;
-    height: 250px;
-  }
-
-  .forma-l::before,
-  .forma-l::after {
-    width: 150px;
-    height: 150px;
-  }
-
-  .rigth-content {
-    margin: 3% auto;
-  }
-
-  .carousel {
-    gap: 0.5rem;
-    margin: 5rem 0;
-  }
-
-  .imagem-anterior img,
-  .imagem-posterior img {
-    width: 180px;
-    height: 220px;
-  }
-
-  .imagem-central img {
-    width: 280px;
-    height: 400px;
-  }
-
-  .recipe-rigth-content-field {
-    flex-direction: column;
-  }
-
-  .recipe-field {
-    position: relative;
-    width: 90%;
-    left: 5%;
-    top: 0;
-    margin-top: 50px;
-  }
-
-  .recipe-rigth-content {
-    width: 85%;
-    margin: 40px auto;
-  }
-
-  .recipe-rigth-content::after {
-    display: none;
-  }
-
-  .recipe1,
-  .recipe2 {
-    flex-direction: column;
-    width: 100%;
-    margin: 20px 0;
-  }
-
-  .recipe1-left-content,
-  .recipe1-rigth-content,
-  .recipe2-texts {
-    width: 100%;
-  }
-
-  .recipe1-left-content img,
-  .recipe2-content img {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-  }
-
-  .recipe2 {
-    margin-left: 0;
-  }
-
-  .recipe2-content {
-    flex-direction: column;
-  }
-
-  .recipes3-4 {
-    flex-direction: column;
-    height: auto;
-    margin-top: 5%;
-  }
-
-  .recipe3,
-  .recipe4 {
-    width: 100%;
-    margin: 20px 0;
-  }
-
-  .recipe4 {
-    margin-top: 10%;
-  }
-
-  .recipe-rigth-content-img-field img {
-    width: 100%;
-  }
-
-  .titulo-secao {
-    font-size: 2.5rem;
-  }
-
-  .titulo-secao::after {
-    width: 100px;
-    height: 2px;
-  }
-
-  .filosofia-apresentacao {
-    font-size: 1.3rem;
-  }
-
-  .bloco-item {
-    flex-direction: column !important;
-    text-align: center;
-    gap: 30px;
-    padding: 40px;
-    border-radius: 20px;
-  }
-
-  .bloco-conteudo {
-    text-align: center;
-  }
-
-  .bloco-item ul {
-    margin-left: 0;
-    padding-left: 40px;
-    text-align: left;
-  }
-
-  .img-circular {
-    width: 220px;
-    height: 220px;
-    border: 10px double #000000;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1), 0 0 0 4px #0a0909;
-  }
-
-  .bloco-item h5 {
-    font-size: 1.8rem;
-  }
-
-  .bloco-item p {
-    font-size: 1.15rem;
-  }
-
-  .conclusao-montagem {
-    padding: 35px;
-    border-radius: 20px;
-  }
-
-  .conclusao-montagem p {
-    font-size: 1.4rem;
-  }
-}
 
 /* Mobile - 480px */
 @media (max-width: 480px) {
@@ -1521,8 +1150,7 @@ header {
   }
 
   .faixa-back {
-    left: -3%;
-    width: 140%;
+    display: none;
   }
 
   #navbar {
@@ -1614,12 +1242,15 @@ header {
   .left-content {
     width: 90%;
     padding: 30px 20px;
+    margin: 5% auto;
+    border-radius: 8px;
   }
 
   .left-content h1 {
     font-size: 2.2rem;
     margin-bottom: 8%;
     margin-top: 5%;
+
   }
 
   .left-content p {
@@ -1627,20 +1258,16 @@ header {
   }
 
   .forma-l {
-    height: 200px;
-  }
-
-  .forma-l::before,
-  .forma-l::after {
-    width: 100px;
-    height: 100px;
+    display: none;
   }
 
   .carousel {
     flex-direction: column;
     margin: 3rem 0;
     gap: 1rem;
+    display: none;
   }
+  
 
   .imagem-anterior,
   .imagem-posterior {
@@ -1713,6 +1340,8 @@ header {
   .recipe-rigth-content {
     width: 90%;
     padding: 30px 20px;
+    margin: 5% auto;
+    border-radius: 8px;
   }
 
   .recipe-rigth-content h1 {
