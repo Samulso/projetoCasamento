@@ -2,7 +2,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useState, useEffect } from "react";
 import "./App.css";
-import "./responsive.,.css";
+import "./responsive.css";
 import GalleryCarousel from "./GalleryCarousel";
 import Carousel from "./Carousel.jsx";
 

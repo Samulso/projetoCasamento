@@ -1129,3 +1129,244 @@ header {
   gap: 10px;
   font-family: "Cormorant Garamond", serif;
 }
+
+/* ========================================
+   MOBILE - até 480px
+   ======================================== */
+@media (max-width: 480px) {
+  /* Header */
+  #navbar {
+    padding: 10px;
+  }
+
+  .header-img {
+    height: 40px;
+  }
+
+  .nav-item a {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  /* Hero */
+  .hero-section {
+    min-height: 55vh;
+  }
+
+  .overlay-content {
+    margin-top: 25%;
+    padding: 15px 10px;
+  }
+
+  .overlay-content h1 {
+    font-size: 1.2rem;
+    line-height: 1.3;
+  }
+
+  .overlay-content p {
+    font-size: 0.65rem;
+  }
+
+  .namePlusCourse h4 {
+    font-size: 0.9rem;
+  }
+
+  .namePlusCourse h5 {
+    font-size: 0.75rem;
+  }
+
+  .cep h5 {
+    font-size: 0.7rem;
+  }
+
+  /* Seções gerais */
+  .apresentacao {
+    padding: 30px 10px;
+  }
+
+  .texto h2 {
+    font-size: 1.2rem;
+  }
+
+  .texto p {
+    font-size: 0.85rem;
+  }
+
+  .button-saibaMais {
+    padding: 10px 20px;
+    font-size: 0.85rem;
+  }
+
+  .App {
+    padding: 25px 10px;
+  }
+
+  .text-2xl {
+    font-size: 1.1rem;
+  }
+
+  .text-xl {
+    font-size: 1rem;
+  }
+
+  /* Preparo */
+  .left-content,
+  .recipe-rigth-content {
+    padding: 20px 15px;
+  }
+
+  .left-content h1,
+  .recipe-rigth-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .left-content p,
+  .recipe-rigth-content p {
+    font-size: 0.85rem;
+  }
+
+  /* Receitas */
+  .recipe-field {
+    padding: 0 10px;
+  }
+
+  .recipe1 h2,
+  .recipe2-content h2 {
+    font-size: 1.3rem;
+  }
+
+  .recipe3 h1,
+  .recipe4 h1 {
+    font-size: 1.4rem;
+  }
+
+  .recipe1-rigth-content p,
+  .recipe2-texts p,
+  .recipe3-carousel-field h3,
+  .recipe4-carousel-field h3 {
+    font-size: 0.8rem;
+  }
+
+  .slider-primary,
+  .slider-secondary {
+    max-width: 100%;
+    height: 350px;
+  }
+
+  .slides-primary,
+  .slides-secondary,
+  .slide-primary,
+  .slide-secondary {
+    height: 350px;
+  }
+
+  .slide-primary img,
+  .slide-secondary img {
+    height: 350px;
+  }
+
+  /* Montagem */
+  .secao-montagem {
+    padding: 40px 10px;
+  }
+
+  .titulo-secao {
+    font-size: 1.4rem;
+  }
+
+  .filosofia-apresentacao {
+    font-size: 0.9rem;
+  }
+
+  .bloco-item {
+    padding: 20px 10px;
+  }
+
+  .bloco-item h5 {
+    font-size: 1.2rem;
+  }
+
+  .bloco-item p {
+    font-size: 0.85rem;
+  }
+
+  .bloco-item li {
+    font-size: 0.8rem;
+  }
+
+  .img-circular {
+    width: 120px;
+    height: 120px;
+    border: 5px double #f28c28;
+  }
+
+  .conclusao-montagem {
+    padding: 20px 10px;
+  }
+
+  .conclusao-montagem p {
+    font-size: 0.9rem;
+  }
+}
+
+/* ========================================
+   MOBILE EXTRA PEQUENO - até 375px
+   ======================================== */
+@media (max-width: 375px) {
+  .overlay-content h1 {
+    font-size: 1.1rem;
+  }
+
+  .overlay-content p {
+    font-size: 0.6rem;
+  }
+
+  .namePlusCourse h4 {
+    font-size: 0.85rem;
+  }
+
+  .texto h2 {
+    font-size: 1.1rem;
+  }
+
+  .left-content h1,
+  .recipe-rigth-content h1 {
+    font-size: 1.6rem;
+  }
+
+  .titulo-secao {
+    font-size: 1.2rem;
+  }
+
+  .img-circular {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* ========================================
+   MOBILE MUITO PEQUENO - até 320px
+   ======================================== */
+@media (max-width: 320px) {
+  .overlay-content h1 {
+    font-size: 1rem;
+  }
+
+  .overlay-content p {
+    font-size: 0.55rem;
+  }
+
+  .left-content h1,
+  .recipe-rigth-content h1 {
+    font-size: 1.4rem;
+  }
+
+  .titulo-secao {
+    font-size: 1.1rem;
+  }
+
+  .img-circular {
+    width: 90px;
+    height: 90px;
+  }
+}
