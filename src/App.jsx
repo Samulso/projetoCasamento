@@ -2,8 +2,10 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useState, useEffect } from "react";
 import "./App.css";
+import "./responsive.,.css";
 import GalleryCarousel from "./GalleryCarousel";
 import Carousel from "./Carousel.jsx";
+
 
 // Importar todas as imagens do arquivo centralizado
 import { images, galeriaImages, slidesApresentacao } from "./imageImports";
@@ -36,7 +38,7 @@ function App() {
     return () => clearInterval(interval);
   }, []);
 
-  
+
 
   return (
     <>
@@ -83,12 +85,12 @@ function App() {
               <h4>Ana Paula Sabbag</h4>
               <h5>Gastronomia</h5>
             </div>
-            
+
           </div>
           <div className="cep">
-              <h5>CEP Jô Rufino e Carlos Aguiar - Senac Taguatinga</h5>
+            <h5>CEP Jô Rufino e Carlos Aguiar - Senac Taguatinga</h5>
           </div>
-          
+
         </div>
         <div className="back-imgs">
           <img className="img_1" src={images.img2} alt="" />
@@ -111,49 +113,54 @@ function App() {
               Nosso evento marcou o início de um novo ciclo de inovação. Confira
               como tudo aconteceu e conheça os objetivos do nosso projeto.
             </p>
-            <button className="button-saibaMais" data-aos="flip-up">
-              Saiba mais
-            </button>
+
+            <a href="#preparo">oi</a>
+            <a href="#apresentacao" className="button-saibaMais" data-aos="flip-up">
+              Saiba mai
+            </a>
           </div>
         </div>
       </section>
 
       {/* Carrosel de fotos - Apresentação */}
-      <main
-        className="App py-10 bg-[#fffaf9] flex flex-col items-center"
-        data-aos="fade-up"
-      >
-        <h2 className="text-2xl font-semibold mb-6 text-gray-800">
-          Galeria de Fotos do Evento
-        </h2>
+      <section className="apresentacao">
+        <main
+          className="App py-10 bg-[#fffaf9] flex flex-col items-center"
+          data-aos="fade-up"
+        >
+          <h2 className="text-2xl font-semibold mb-6 text-gray-800">
+            Galeria de Fotos do Evento
+          </h2>
 
-        <Carousel data-aos="zoom-in">
-          {slidesApresentacao.map((s, i) => (
-            <img
-              key={i}
-              src={s}
-              alt={`Foto ${i + 1}`}
-              className="w-full h-[450px] object-cover rounded-2xl"
-            />
-          ))}
-        </Carousel>
+          <Carousel data-aos="zoom-in">
+            {slidesApresentacao.map((s, i) => (
+              <img
+                key={i}
+                src={s}
+                alt={`Foto ${i + 1}`}
+                className="w-full h-[450px] object-cover rounded-2xl"
+              />
+            ))}
+          </Carousel>
 
-        {/* Área de vídeo */}
-        <div className="mt-10 text-center" data-aos="fade-up">
-          <h3 className="text-xl font-medium mb-4 text-gray-700">
-            Veja um pouco mais do nosso evento 🎥
-          </h3>
-          <div className="flex justify-center">
-            <video
-              className="rounded-2xl shadow-lg border border-gray-200 w-[720px] max-w-90 max-wd-full"
-              controls
-              data-aos="zoom-in"
-            >
-              <source src={images.videoEditado} type="video/mp4" />
-            </video>
+          {/* Área de vídeo */}
+          <div className="mt-10 text-center" data-aos="fade-up">
+            <h3 className="text-xl font-medium mb-4 text-gray-700">
+              Veja um pouco mais do nosso evento 
+            </h3>
+            <div className="flex justify-center">
+              <video
+                className="rounded-2xl shadow-lg border border-gray-200 w-[720px] max-w-90 max-wd-full"
+                controls
+                data-aos="zoom-in"
+              >
+                <source src={images.videoEditado} type="video/mp4" />
+              </video>
+            </div>
           </div>
-        </div>
-      </main>
+        </main>
+      </section>
+
 
       {/*preparo*/}
       <section className="preparo" data-aos="fade-up" id="Preparo">
@@ -162,7 +169,7 @@ function App() {
           <div className="left-content">
             <h1>Preparo</h1>
             <p>
-              Cada prato começa com um gesto simples — o corte, o cheiro, o som
+              Cada prato começa com um gesto simples o corte, o cheiro, o som
               da panela. Aqui, cada ingrediente ganha significado nas mãos de
               quem prepara com amor. O preparo é mais do que técnica: é cuidado,
               é partilha, é aprendizado.
@@ -171,13 +178,13 @@ function App() {
               Entre risadas e conversas, o tempo parece desacelerar. O vapor, o
               aroma e as cores se misturam, criando memórias que vão muito além
               do sabor. É nesse instante que a cozinha deixa de ser apenas um
-              espaço físico e se transforma em um lugar de afeto — onde cada
+              espaço físico e se transforma em um lugar de afeto onde cada
               movimento carrega um propósito, e cada receita guarda uma
               história.
               <br></br>
               <br></br>
               Porque cozinhar, antes de tudo, é um ato de conexão: com o
-              alimento, com o outro e com o que há de mais humano em nós.
+              alimento, com o outro e com o que há de mais humano em nós. 
             </p>
           </div>
 
@@ -211,7 +218,7 @@ function App() {
               </div>
               <div className="recipe1-rigth-content">
                 <h2>Brigadeiro de Capim-Santo</h2>
-                <h3>Chef Poliana</h3>
+                <h3>Poliana</h3>
                 <br></br>
                 <p>
                   🧂 <span className="t-001">Ingredientes</span> (para cerca de
@@ -235,7 +242,7 @@ function App() {
               <div className="recipe2-content">
                 <div className="recipe2-texts">
                   <h2>Macaron Francês</h2>
-                  <h4 className="chef-name">Chef Poliana</h4>
+                  <h4 className="chef-name">Poliana</h4>
                   <p>
                     🧂 <span className="t-001">Ingredientes</span> (rendimento:
                     aprox. 25 unidades)
@@ -272,7 +279,7 @@ function App() {
             <div className="recipes3-4">
               <div className="recipe3">
                 <h1>Caldo verde</h1>
-                <h2>Chef Nilda</h2>
+                <h2>Nilda</h2>
                 <div className="recipe3-carousel-field">
                   <div className="slider-primary">
                     <div className="slides-primary">
@@ -425,11 +432,11 @@ function App() {
           <div className="recipe-rigth-content">
             <h1>Preparo</h1>
             <p>
-              Além dessas, nasceram outras criações — pratos que pareciam
+              Além dessas, nasceram outras criações pratos que pareciam
               traduzir em sabores a própria beleza do instante. Cada receita
               revelava um gesto de carinho, uma busca por harmonia entre o
               simples e o sofisticado. Havia cores que lembravam flores, aromas
-              que dançavam pelo ar e texturas que despertavam memórias — tudo se
+              que dançavam pelo ar e texturas que despertavam memórias tudo se
               encontrava como numa cerimônia silenciosa, onde a comida falava
               por si.
               <br></br>
@@ -444,7 +451,7 @@ function App() {
               Cada prato, cuidadosamente disposto, era um convite à
               contemplação: uma mistura de arte e emoção, de técnica e
               sentimento. E quando todos se reuniram à mesa, o que se serviu não
-              foi apenas comida — mas um pedaço de sonho, de celebração, de
+              foi apenas comida mas um pedaço de sonho, de celebração, de
               poesia feita sabor.
             </p>
 
