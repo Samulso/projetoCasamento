@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+
+
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap");
 
 
@@ -132,11 +134,13 @@ header {
 
 
 
+/* ➡️ ALTERAÇÃO: Aumento da altura do menu de 120px para 140px */
+
 #navbar {
 
   width: 100%;
 
-  height: 120px;
+  height: 140px;
 
   display: flex;
 
@@ -164,17 +168,21 @@ header {
 
 
 
+/* ➡️ ALTERAÇÃO: Aumento do espaçamento entre os links de 60px para 70px */
+
 #nav_list {
 
   display: flex;
 
   list-style: none;
 
-  gap: 60px;
+  gap: 70px;
 
 }
 
 
+
+/* ➡️ ALTERAÇÃO: Aumento do tamanho da fonte dos links de 20px para 22px */
 
 .nav-item a,
 
@@ -184,7 +192,7 @@ header {
 
   font-weight: 600;
 
-  font-size: 20px;
+  font-size: 22px;
 
 }
 
@@ -2022,7 +2030,7 @@ header {
 
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
 
-  border: none
+  border: none;
 
 }
 
@@ -2268,11 +2276,9 @@ header {
 
 
 
-/* ---------------------------------------------------- */
+/* ❌ REMOÇÃO DAS BOLINHAS (Solicitação anterior) */
 
-/* REMOÇÃO DAS BOLINHAS (NOVO CÓDIGO)         */
-
-/* ---------------------------------------------------- */
+/* Oculta os botões de navegação manual e automática dos carrosséis */
 
 .manual-navigation-primary,
 
@@ -2286,9 +2292,61 @@ header {
 
 }
 
-/* ---------------------------------------------------- */
+
 
 /* ---------------------------------------------------- */
+
+/* ✅ ESTILIZAÇÃO DO RODAPÉ (FOOTER - Nova Alteração)   */
+
+/* ---------------------------------------------------- */
+
+
+
+.rodape {
+
+    /* Garante que ocupe a largura total */
+
+    width: 100%; 
+
+    padding: 30px 10px;
+
+    background-color: #ffbeba; /* Cor de fundo suave (do seu tema) */
+
+    text-align: center;
+
+    border-top: 9px solid #1d99ec; /* Linha sutil no topo */
+
+}
+
+
+
+.rodape p {
+
+    font-size: 0.85rem;
+
+    color: #5c3a41; /* Cor de texto discreta */
+
+    margin: 0;
+
+    line-height: 1.5;
+
+}
+
+
+
+/* Destaque para o nome da startup */
+
+.rodape .startup-name {
+
+    font-weight: 700;
+
+    color: #287ff2; /* Cor de destaque (laranja do seu tema) */
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.5px;
+
+}
 
 
 
@@ -2312,17 +2370,21 @@ header {
 
 
 
+  /* ➡️ ALTERAÇÃO: Aumenta o logo no celular */
+
   .header-img {
 
-    height: 40px;
+    height: 50px; 
 
   }
 
 
 
+  /* ➡️ ALTERAÇÃO: Aumenta a fonte dos links no celular */
+
   .nav-item a {
 
-    font-size: 12px;
+    font-size: 14px;
 
     padding: 6px 10px;
 
@@ -2452,15 +2514,13 @@ header {
 
 
 
-  /* ---------------------------------------------------- */
+  /* 📐 OTIMIZAÇÃO DE LAYOUT RESPONSIVO PARA RECEITAS (Manutenção) */
 
-    /* ALTERAÇÕES DE LAYOUT RESPONSIVO PARA RECEITAS (NOVO CÓDIGO) */
-
-    /* ---------------------------------------------------- */
+    
 
     .preparo-field {
 
-        flex-direction: column; /* Empilha o bloco lateral e o conteúdo de receitas */
+        flex-direction: column;
 
     }
 
@@ -2470,7 +2530,7 @@ header {
 
     .recipe-rigth-content {
 
-        width: 100%; /* Faz o bloco lateral ocupar toda a largura */
+        width: 100%; 
 
         margin-left: 0;
 
@@ -2484,9 +2544,9 @@ header {
 
     .recipe-field {
 
-        position: static; /* Remove o posicionamento absoluto para fluir */
+        position: static;
 
-        width: 100%; /* Ocupa toda a largura */
+        width: 100%; 
 
         left: 0;
 
@@ -2544,7 +2604,7 @@ header {
 
         width: 100%;
 
-        margin-left: 0; /* Remove margem que empurrava para a direita */
+        margin-left: 0; 
 
     }
 
@@ -2582,7 +2642,7 @@ header {
 
     .recipes3-4 {
 
-        flex-direction: column; /* Empilha a receita 3 e 4 */
+        flex-direction: column;
 
         gap: 20px;
 
@@ -2598,19 +2658,13 @@ header {
 
     .recipe4 {
 
-        width: 100%; /* Ocupam toda a largura */
+        width: 100%; 
 
         margin-top: 0; 
 
         padding: 1rem;
 
     }
-
-    /* ---------------------------------------------------- */
-
-    /* FIM DAS ALTERAÇÕES DE LAYOUT RESPONSIVO */
-
-    /* ---------------------------------------------------- */
 
 
 
