@@ -1,44 +1,246 @@
-/* ========================================
-   RESPONSIVIDADE COMPLETA - CORRIGIDA
-   Sistema de Gastronomia - Senac
-   ======================================== */
-
-
-/* ========================================
-   MOBILE - até 480px
-   ======================================== */
-@media (max-width: 480px) {
-  /* Header */
-  #navbar {
-    padding: 10px;
-  }
-
-  .header-img {
-    height: 40px;
-  }
-
-  .nav-item a {
-    font-size: 12px;
-    padding: 6px 10px;
-  }
-
-  /* Hero */
-  .hero-section {
-    min-height: 55vh;
-  }
-
+@media (max-width: 768px) {
   .overlay-content {
-    margin-top: 25%;
-    padding: 15px 10px;
+    padding: 40px 30px;
+    background-color: rgba(255, 190, 186, 0.9);
+    border-radius: 20px;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+
+  .imagem img {
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .apresentacao .container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .preparo-field {
+    flex-direction: column;
+    min-height: auto;
+    padding: 0 5%;
+  }
+
+  .left-content {
+    width: 90%;
+    margin: 5% auto;
+    padding: 40px 30px;
+    margin-left: auto;
+    min-width: auto;
+  }
+
+  .left-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .forma-l,
+  .faixa-back,
+  .preparo-img_1,
+  .preparo-img_2 {
+    display: none;
+  }
+
+  .carousel {
+    display: none;
+  }
+
+  .recipe-rigth-content-field {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    padding: 20px 5%;
+  }
+
+  .recipe-rigth-content {
+    width: 90%;
+    margin-right: 0;
+    padding: 30px 20px;
+    border-radius: 8px;
+    height: auto;
+    min-width: auto;
+    margin-top: 20px;
+  }
+
+  .recipe-rigth-content::after {
+    display: none;
+  }
+
+  .recipe-field {
+    position: relative;
+    left: 0;
+    width: 95%;
+    margin: 0 auto;
+    top: 0;
+    padding: 0;
+    gap: 15px;
+    min-width: auto;
+  }
+
+  .recipe1,
+  .recipe2 {
+    flex-direction: column;
+    width: 100%;
+    margin-left: 0;
+    padding: 15px;
+    margin-top: 5%;
+  }
+
+  .recipe1-left-content,
+  .recipe1-rigth-content,
+  .recipe2-texts {
+    width: 100%;
+    padding: 0.5rem 0;
+    min-width: auto;
+  }
+
+  .recipe2-content {
+    flex-direction: column;
+    padding: 0.5rem 0;
+  }
+
+  .recipe1-left-content img,
+  .recipe2-content img {
+    width: 100%;
+    height: auto;
+    min-width: auto;
+  }
+
+  .recipe2-content img {
+    margin-top: 15px;
+  }
+
+  .recipes3-4 {
+    flex-direction: column;
+    height: auto;
+    margin-top: 5%;
+    gap: 20px;
+  }
+
+  .recipe3,
+  .recipe4 {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 0;
+    height: auto;
+    min-width: auto;
+  }
+
+  .bloco-item,
+  .bloco-item:nth-child(2) {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+    gap: 20px;
+  }
+
+  .bloco-item:nth-child(2) .bloco-conteudo {
+    order: 1;
+  }
+
+  .img-circular {
+    order: 2;
+    margin-top: 20px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .bloco-conteudo {
+    text-align: center;
+  }
+
+  .bloco-item p,
+  .bloco-item li {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: left;
+  }
+
+  .instructors-field {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .rigth-content {
+    width: 100%;
+    margin: 20px auto; 
+    padding: 0 10px;
+    flex-direction: column; 
+  }
+
+  .item-preparo {
+    width: 100%;
+  }
+
+  .item-preparo h1 {
+    font-size: 1.5rem;
+    margin: 20px auto;
+  }
+
+  .carousel {
+    gap: 0;
+    perspective: none; 
+    width: 100%; 
+    justify-content: center;
+    margin: 0 auto; 
+    overflow: hidden; 
+  }
+  
+  .imagem-anterior,
+  .imagem-posterior {
+    display: none;
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    transform: none;
+  }
+  
+  .imagem-central {
+    width: 100%; 
+    transform: none; 
+    opacity: 1;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    margin: 0; 
+  }
+
+  .imagem-central img {
+    width: 90%; 
+    height: 300px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    transform: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .overlay-content {
+    padding: 25px 15px;
   }
 
   .overlay-content h1 {
     font-size: 1.2rem;
-    line-height: 1.3;
   }
 
   .overlay-content p {
-    font-size: 0.65rem;
+    font-size: 0.6rem;
+  }
+
+  .instructors-field {
+    gap: 15px;
   }
 
   .namePlusCourse h4 {
@@ -49,157 +251,25 @@
     font-size: 0.75rem;
   }
 
-  .cep h5 {
-    font-size: 0.7rem;
-  }
-
-  /* Seções gerais */
-  .apresentacao {
-    padding: 30px 10px;
-  }
-
   .texto h2 {
     font-size: 1.2rem;
   }
 
-  .texto p {
-    font-size: 0.85rem;
-  }
-
-  .button-saibaMais {
-    padding: 10px 20px;
-    font-size: 0.85rem;
-  }
-
-  .App {
-    padding: 25px 10px;
-  }
-
-  .text-2xl {
-    font-size: 1.1rem;
-  }
-
-  .text-xl {
-    font-size: 1rem;
-  }
-
-  /* Preparo */
-  .left-content,
-  .recipe-rigth-content {
-    padding: 20px 15px;
-  }
-
   .left-content h1,
   .recipe-rigth-content h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
-  .left-content p,
-  .recipe-rigth-content p {
-    font-size: 0.85rem;
+  .titulo-secao {
+    font-size: 1.5rem;
   }
 
-  /* Receitas */
-  .recipe-field {
-    padding: 0 10px;
-  }
-
-  .recipe1 h2,
-  .recipe2-content h2 {
+  .bloco-item h5 {
     font-size: 1.3rem;
   }
 
   .recipe3 h1,
   .recipe4 h1 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
-
-  .recipe1-rigth-content p,
-  .recipe2-texts p,
-  .recipe3-carousel-field h3,
-  .recipe4-carousel-field h3 {
-    font-size: 0.8rem;
-  }
-
-  .slider-primary,
-  .slider-secondary {
-    max-width: 100%;
-    height: 350px;
-  }
-
-  .slides-primary,
-  .slides-secondary,
-  .slide-primary,
-  .slide-secondary {
-    height: 350px;
-  }
-
-  .slide-primary img,
-  .slide-secondary img {
-    height: 350px;
-  }
-
-  
-
-/* ========================================
-   MOBILE EXTRA PEQUENO - até 375px
-   ======================================== */
-@media (max-width: 375px) {
-  .overlay-content h1 {
-    font-size: 1.1rem;
-  }
-
-  .overlay-content p {
-    font-size: 0.6rem;
-  }
-
-  .namePlusCourse h4 {
-    font-size: 0.85rem;
-  }
-
-  .texto h2 {
-    font-size: 1.1rem;
-  }
-
-  .left-content h1,
-  .recipe-rigth-content h1 {
-    font-size: 1.6rem;
-  }
-
-  .titulo-secao {
-    font-size: 1.2rem;
-  }
-
-  .img-circular {
-    width: 100px;
-    height: 100px;
-  }
-}
-
-/* ========================================
-   MOBILE MUITO PEQUENO - até 320px
-   ======================================== */
-@media (max-width: 320px) {
-  .overlay-content h1 {
-    font-size: 1rem;
-  }
-
-  .overlay-content p {
-    font-size: 0.55rem;
-  }
-
-  .left-content h1,
-  .recipe-rigth-content h1 {
-    font-size: 1.4rem;
-  }
-
-  .titulo-secao {
-    font-size: 1.1rem;
-  }
-
-  .img-circular {
-    width: 90px;
-    height: 90px;
-  }
-}
 }

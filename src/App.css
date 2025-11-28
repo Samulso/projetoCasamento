@@ -1018,7 +1018,6 @@ header {
 .bloco-item:nth-child(2) {
   flex-direction: row-reverse;
   background-color: #ffffff;
-  border: 2px solid #000000;
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
 }
 
@@ -1027,7 +1026,7 @@ header {
   height: 280px;
   border-radius: 50%;
   object-fit: cover;
-  border: 12px double #f3973b;
+  border: 12px double #fffdfb;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15), 0 0 0 5px #ffbeba;
   flex-shrink: 0;
 }
