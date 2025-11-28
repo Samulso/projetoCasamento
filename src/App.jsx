@@ -108,7 +108,7 @@ function App() {
 
           <div className="texto" data-aos="fade-left">
             <h2>Apresentação do Projeto</h2>
-            <p>
+            <p style={{ textAlign: 'justify' }}>
               Nosso evento marcou o início de um novo ciclo de inovação. Confira
               como tudo aconteceu e conheça os objetivos do nosso projeto abaixo.
             </p>
@@ -159,7 +159,7 @@ function App() {
         <div className="preparo-field">
           <div className="left-content">
             <h1>Preparo</h1>
-            <p>
+            <p style={{ textAlign: 'justify' }}>
               Cada prato começa com um gesto simples — o corte, o cheiro, o som
               da panela. Aqui, cada ingrediente ganha significado nas mãos de
               quem prepara com amor. O preparo é mais do que técnica: é cuidado,
@@ -200,7 +200,7 @@ function App() {
             <div className="recipe1">
               <div className="recipe1-left-content">
                 <img src={images.recipe1} alt="Brigadeiro de Capim-Santo" />
-                <p>
+                <p style={{ textAlign: 'justify' }}>
                   O brigadeiro de capim-santo (ou capim-limão) é uma releitura
                   brasileira moderna de um clássico, que une a tradição do
                   brigadeiro à sofisticação dos sabores herbais e aromáticos da
@@ -213,18 +213,18 @@ function App() {
                 <br></br>
                 <p>
                    <span className="t-001">Ingredientes</span> (para cerca de
-                  20 unidades)
-                  <br></br>
-                  <br></br>✲ 1 lata (395 g) de leite condensado
-                  <br></br>✲ 100 ml de leite integral
-                  <br></br>✲ 1 colher (sopa) de manteiga sem sal
-                  <br></br>✲ 1/2 xícara (chá) de capim-santo picado (folhas
-                  frescas)
-                  <br></br>✲ Açúcar cristal ou coco ralado fino para enrolar
-                  <br></br>
-                  <br></br>
-                  (Opcional: 50 g de chocolate branco picado para textura mais
-                  cremosa.)
+                   20 unidades)
+                   <br></br>
+                   <br></br>✲ 1 lata (395 g) de leite condensado
+                   <br></br>✲ 100 ml de leite integral
+                   <br></br>✲ 1 colher (sopa) de manteiga sem sal
+                   <br></br>✲ 1/2 xícara (chá) de capim-santo picado (folhas
+                   frescas)
+                   <br></br>✲ Açúcar cristal ou coco ralado fino para enrolar
+                   <br></br>
+                   <br></br>
+                   (Opcional: 50 g de chocolate branco picado para textura mais
+                   cremosa.)
                 </p>
                 <h3></h3>
               </div>
@@ -235,7 +235,7 @@ function App() {
                   <h2>Macaron Francês</h2>
                   <h4 className="chef-name">Poliana</h4>
                   <p>
-                     <span className="t-001">Ingredientes</span> (rendimento:
+                    <span className="t-001">Ingredientes</span> (rendimento:
                     aprox. 25 unidades)
                     <br></br>
                     <br></br>
@@ -254,8 +254,8 @@ function App() {
                     <br></br>✲ 1 colher (sopa) de manteiga sem sal
                   </p>
 
-                  <h3>
-                    mais que um doce — é uma poesia em forma de sabor. Com sua
+                  <h3 style={{ textAlign: 'justify' }}>
+                    Mais que um doce — é uma poesia em forma de sabor. Com sua
                     casquinha leve e crocante que se desfaz ao toque, revela um
                     coração macio e delicado, quase etéreo. Nascido na Itália
                     renascentista e levado à França por Catarina de Médici,
@@ -318,7 +318,7 @@ function App() {
                       ></label>
                     </div>
                   </div>
-                  <h3>
+                  <h3 style={{ textAlign: 'justify' }}>
                     Em 2011, foi eleito uma das 7 Maravilhas da Gastronomia de
                     Portugal, o que demonstra sua importância cultural e
                     culinária no país.
@@ -399,7 +399,7 @@ function App() {
                       ></label>
                     </div>
                   </div>
-                  <h3>
+                  <h3 style={{ textAlign: 'justify' }}>
                     O farfale nasceu na Itália, criado para aproveitar as sobras
                     de massa — mas seu formato de borboleta o tornou símbolo de
                     leveza e beleza à mesa. No Brasil, chamamos de gravatinha.
@@ -422,7 +422,7 @@ function App() {
 
           <div className="recipe-rigth-content">
             <h1>Preparo</h1>
-            <p>
+            <p style={{ textAlign: 'justify' }}>
               Além dessas, nasceram outras criações — pratos que pareciam
               traduzir em sabores a própria beleza do instante. Cada receita
               revelava um gesto de carinho, uma busca por harmonia entre o
@@ -475,7 +475,7 @@ function App() {
             A Arte da Montagem: Detalhes que Fazem a Diferença 
           </h2>
           {/* Introdução sobre a filosofia de apresentação */}
-          <p className="filosofia-apresentacao">
+          <p className="filosofia-apresentacao" style={{ textAlign: 'justify' }}>
             A apresentação é a primeira impressão. Nossos bolos são montados com
             precisão artística, garantindo que a experiência visual seja tão
             rica quanto a gustativa.
@@ -492,7 +492,7 @@ function App() {
               />
               <div className="bloco-conteudo">
                 <h5>1. Decoração e Acabamento</h5>
-                <p>
+                <p style={{ textAlign: 'justify' }}>
                   Cada detalhe do bolo é pensado com intenção e harmonia.
                   Utilizamos técnicas de confeitaria moderna para criar
                   composições que agradam o olhar e preparam o paladar para o
@@ -524,7 +524,7 @@ function App() {
               />
               <div className="bloco-conteudo">
                 <h5>2. Estrutura e Estabilidade</h5>
-                <p>
+                <p style={{ textAlign: 'justify' }}>
                   Garantimos que cada bolo seja estruturado com perfeição,
                   mantendo a elegância visual. A proporção entre os andares e a
                   estabilidade são cruciais para uma apresentação impecável.
@@ -548,7 +548,7 @@ function App() {
           </div>
 
           <div className="conclusao-montagem">
-            <p>
+            <p style={{ textAlign: 'justify' }}>
               É essa dedicação em cada etapa, desde a seleção dos ingredientes
               até a montagem final, que transforma um simples bolo em uma
               <strong> experiência gastronômica de luxo </strong>
