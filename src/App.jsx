@@ -557,7 +557,7 @@ function App() {
         </div>
         <footer className="rodape">
     <p>
-        Desenvolvido por <span className="startup-name">Nexacode</span>. | Todos os direitos reservados. © 2025
+        Desenvolvido por <span className="startup-name">Nexacode</span> e Konekcia. | Todos os direitos reservados. © 2025
     </p>
 </footer>
       </section>
