@@ -2353,7 +2353,34 @@ header {
 
 
 
+@media (max-width: 768px) {
 
+  .bloco-item {
+
+    flex-direction: column;
+
+    text-align: center;
+
+  }
+  
+  #nav_list {
+
+  display: flex;
+
+  list-style: none;
+  font-size: 1px;
+  gap: 10px;
+
+}
+
+.nav-item a {
+
+    font-size: 16px;
+
+    padding: 6px 8px;
+
+  }
+}
 
 
 /* ========================================
@@ -2371,6 +2398,16 @@ header {
     padding: 10px;
 
   }
+
+  #nav_list {
+
+  display: flex;
+
+  list-style: none;
+
+  gap: 10px;
+
+}
 
   .secao-montagem::after {
 
